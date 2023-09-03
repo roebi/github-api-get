@@ -1,0 +1,45 @@
+{
+    "name": "github-api",
+    "version": "0.1.0",
+    "description": "use github api",
+    "type": "module",
+    "exports": "./githubApi.ts",
+    "files": [
+        "./githubApi.ts",
+        "./decs.d.ts"
+    ],
+    "scripts": {
+      "prettier:help": "npx prettier --help",
+      "prettier:check": "npx prettier --check .",
+      "prettier:listdifferent": "npx prettier --list-different .",
+      "prettier:write": "npx prettier --write .",
+      "test:ava": "ava",
+      "test:ava:watch": "ava --watch",
+      "test:tsd": "tsd"
+    },
+    "devDependencies": {
+        "prettier": "^3.0.3",
+        "tsd": "^0.29.0",
+        "typescript": "^5.2.2",
+        "ava": "^5.3.1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/roebi/github-api-plugin.git"
+    },
+    "keywords": [
+        "github-api",
+        "github-meta",
+        "github"
+    ],
+    "author": "roebi",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/roebi/github-api/issues"
+    },
+    "homepage": "https://github.com/roebi/github-api#readme",
+    "type": "module",
+    "dependencies": {
+        "jsonpath": "^1.1.1"
+    }
+}
