@@ -15,7 +15,7 @@ export async function getGithubTopics(githubName: String): Promise<Array<String>
         return await response.json();
       } else {
         // based on
-        // file:///C:/d/r/astro-github-api-plugin/01-01-vanilla-HTML5-starter-page.json
+        // github-api/01-01-vanilla-HTML5-starter-page.json
         return Promise.resolve({
           name: "01-01-vanilla-HTML5-starter-page",
           html_url: "https://github.com/roebi/01-01-vanilla-HTML5-starter-page",
