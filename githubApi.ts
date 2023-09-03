@@ -1,19 +1,25 @@
 // githubApi.ts
 
 import jp from "jsonpath";
-import { GITHUB_API_PROJECT_URL } from "../consts";
+import { GITHUB_API_BASE_URL } from "./consts";
+
 const isProd = import.meta.env.PROD; // false;
 
-export async function getGithubTopics(githubName: String): Promise<Array<String>> {
-  if (githubName) {
-    // console.info('githubApi.ts: githubName: ' + githubName);
+export async function getGithubTopics(loginName: String, projectName: String): Promise<Array<String>> {
+  // console.group("getGithubTopics");
+  if (loginName && projectName) {
+    // console.info('githubApi.ts: loginName: ' + loginName);
+    // console.info('githubApi.ts: projectName: ' + projectName);
 
     async function returnData(isProd: boolean) {
       if (isProd) {
         // get from github project api
-        const response = await fetch(GITHUB_API_PROJECT_URL + githubName);
+        const GITHUB_API_PROJECT_URL = GITHUB_API_BASE_URL + "repos/" + loginName + "/";
+
+        const response = await fetch(GITHUB_API_PROJECT_URL + projectName);
         return await response.json();
       } else {
+        // return mock data
         // based on
         // github-api/01-01-vanilla-HTML5-starter-page.json
         return Promise.resolve({
@@ -25,10 +31,11 @@ export async function getGithubTopics(githubName: String): Promise<Array<String>
         });
       }
     }
-
+    // console.groupEnd();
     // https://www.npmjs.com/package/jsonpath MIT License
     return Promise.resolve(jp.query(await returnData(isProd), "$.topics[*]") as Array<String>);
   } else {
+    // console.groupEnd();
     return Promise.resolve([] as Array<String>);
   }
 }
