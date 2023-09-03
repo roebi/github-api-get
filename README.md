@@ -1,6 +1,6 @@
 ## github-api
 
- - use github api to get project info, i.e. its topics or user info
+- use github api to get project info, i.e. its topics or user info
 
 - github api for a project - only root GET request
 
