@@ -5,7 +5,19 @@ import { GITHUB_API_BASE_URL } from "./consts";
 
 const isProd = false; // import.meta.env.PROD; // false;
 
-export async function getGithubTopics(loginName: String, projectName: String, infoLog: boolean, isProd: boolean): Promise<Array<String>> {
+  /**
+   * Returns the github topics of a project.
+   *
+   * @remarks
+   * This method is part of the {@link githubApi | github-api}.
+   *
+   * @param loginName - The github login name
+   * @param projectName - The github project name
+   * @param infoLog - boolean true logs group and info into the console
+   * @param isProd - boolean true calls fetch to github api, false returns mock data with same structure
+   * @returns The github topics of a project as a Promise<String[]>
+   */
+export async function getGithubTopics(loginName: String, projectName: String, infoLog: boolean, isProd: boolean): Promise<String[]> {
   if (infoLog) {
     console.group("getGithubTopics");
   }
@@ -27,7 +39,19 @@ export async function getGithubTopics(loginName: String, projectName: String, in
   }
 }
 
-async function returnData(loginName: String, projectName: String, infoLog: boolean, isProd: boolean) {
+  /**
+   * Returns the github the project object / json of a project.
+   *
+   * @remarks
+   * This method is part of the {@link githubApi | github-api}.
+   *
+   * @param loginName - The github login name
+   * @param projectName - The github project name
+   * @param infoLog - boolean true logs group and info into the console
+   * @param isProd - boolean true calls fetch to github api, false returns mock data with same structure
+   * @returns The github the project object / json of a project Promise<any>
+   */
+  async function returnData(loginName: String, projectName: String, infoLog: boolean, isProd: boolean) {
   if (isProd) {
     // get from github project api
     const GITHUB_API_PROJECT_URL = GITHUB_API_BASE_URL + "repos/" + loginName + "/";
