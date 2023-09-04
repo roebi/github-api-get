@@ -27,6 +27,23 @@ import github-api from 'github-api';
 ---
 ```
 
+## github API has a hourly based rate limit
+
+if this limit is reached in a hour, then
+
+the response is a in this case Status is 403 Forbidden
+
+and return this Message Object / Json:
+
+```javascript
+{
+  message: "API rate limit exceeded for nnn.nnn.nnn.nnn. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)",
+  documentation_url: 'https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting'
+}
+```
+
+see [github - rest - resources-in-the-rest-api - rate-limiting](https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting)
+
 ## API
 
 ### github-api(loginName, projectName?)
