@@ -1,0 +1,1 @@
+Please read the different LICENSE files present in this distribution.
