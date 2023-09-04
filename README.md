@@ -31,7 +31,7 @@ import github-api from 'github-api';
 
 if this limit is reached in a hour, then
 
-the response is a in this case Status is 403 Forbidden
+the response is in this case a 'Status is 403' Forbidden
 
 and return this Message Object / Json:
 
