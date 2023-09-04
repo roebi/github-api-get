@@ -38,7 +38,6 @@
         "url": "https://github.com/roebi/github-api/issues"
     },
     "homepage": "https://github.com/roebi/github-api#readme",
-    "type": "module",
     "dependencies": {
         "jsonpath": "^1.1.1"
     }
