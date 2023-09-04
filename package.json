@@ -10,19 +10,20 @@
         "LICENSE"
     ],
     "scripts": {
-      "prettier:help": "npx prettier --help",
-      "prettier:check": "npx prettier --check .",
-      "prettier:listdifferent": "npx prettier --list-different .",
-      "prettier:write": "npx prettier --write .",
-      "test:ava": "ava",
-      "test:ava:watch": "ava --watch",
-      "test:tsd": "tsd"
+        "prettier:help": "npx prettier --help",
+        "prettier:check": "npx prettier --check .",
+        "prettier:listdifferent": "npx prettier --list-different .",
+        "prettier:write": "npx prettier --write .",
+        "test:ava": "ava",
+        "test:ava:watch": "ava --watch",
+        "test:tsd": "tsd"
     },
     "devDependencies": {
+        "@types/node": "^18.17.14",
+        "ava": "^5.3.1",
         "prettier": "^3.0.3",
         "tsd": "^0.29.0",
-        "typescript": "^5.2.2",
-        "ava": "^5.3.1"
+        "typescript": "^5.2.2"
     },
     "repository": {
         "type": "git",
