@@ -97,12 +97,7 @@
   "allow_forking": true,
   "is_template": true,
   "web_commit_signoff_required": false,
-  "topics": [
-    "html5",
-    "html5-template",
-    "roebi",
-    "starter"
-  ],
+  "topics": ["html5", "html5-template", "roebi", "starter"],
   "visibility": "public",
   "forks": 0,
   "open_issues": 0,

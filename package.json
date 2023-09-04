@@ -1,46 +1,65 @@
 {
-    "name": "github-api",
-    "version": "0.1.0",
-    "description": "use github api",
-    "type": "module",
-    "exports": "./githubApi.ts",
-    "files": [
-        "./githubApi.ts",
-        "./decs.d.ts",
-        "LICENSE"
-    ],
-    "scripts": {
-        "prettier:help": "npx prettier --help",
-        "prettier:check": "npx prettier --check .",
-        "prettier:listdifferent": "npx prettier --list-different .",
-        "prettier:write": "npx prettier --write .",
-        "test:ava": "ava",
-        "test:ava:watch": "ava --watch",
-        "test:tsd": "tsd"
-    },
-    "devDependencies": {
-        "@types/node": "^18.17.14",
-        "ava": "^5.3.1",
-        "prettier": "^3.0.3",
-        "tsd": "^0.29.0",
-        "typescript": "^5.2.2"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/roebi/github-api-plugin.git"
-    },
-    "keywords": [
-        "github-api",
-        "github-meta",
-        "github"
-    ],
-    "author": "roebi",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/roebi/github-api/issues"
-    },
-    "homepage": "https://github.com/roebi/github-api#readme",
-    "dependencies": {
-        "jsonpath": "^1.1.1"
+  "name": "github-api",
+  "version": "0.1.0",
+  "description": "use github api",
+  "type": "module",
+  "exports": "./githubApi.ts",
+  "types": "./githubApi.d.ts",
+  "files": [
+    "./githubApi.ts",
+    "./githubApi.d.ts",
+    "LICENSE"
+  ],
+  "scripts": {
+    "compile": "tsc",
+    "prettier:help": "npx prettier --help",
+    "prettier:check": "npx prettier --check .",
+    "prettier:listdifferent": "npx prettier --list-different .",
+    "prettier:write": "npx prettier --write .",
+    "test:ava": "ava",
+    "test:ava:watch": "ava --watch",
+    "test:tsd": "tsd",
+    "testnocoverage": "ava test.js",
+    "srccoverage": "c8 ava test.js",
+    "genreportcoverage": "c8 report --reporter html",
+    "showreportcoverage": "open-cli coverage/index.html"
+  },
+  "devDependencies": {
+    "@ava/typescript": "^4.1.0",
+    "@tsconfig/node18": "^18.2.1",
+    "@types/node": "^18.17.14",
+    "ava": "^5.3.1",
+    "c8": "^8.0.1",
+    "open-cli": "^7.2.0",
+    "prettier": "^3.0.3",
+    "tsd": "^0.29.0",
+    "typescript": "^5.2.2"
+  },
+  "ava": {
+    "typescript": {
+      "rewritePaths": {
+        "src/": "build/"
+      },
+      "compile": false
     }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roebi/github-api-plugin.git"
+  },
+  "keywords": [
+    "github-api",
+    "github-meta",
+    "github"
+  ],
+  "author": "roebi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/roebi/github-api/issues"
+  },
+  "homepage": "https://github.com/roebi/github-api#readme",
+  "dependencies": {
+    "jsonpath": "^1.1.1",
+    "node-fetch": "^3.3.2"
+  }
 }

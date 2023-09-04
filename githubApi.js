@@ -1,11 +1,8 @@
 // githubApi.ts
-
 import fetch from "node-fetch";
 import jp from "jsonpath";
 import { GITHUB_API_BASE_URL } from "./consts.js";
-
 const isProd = false; // import.meta.env.PROD; // false;
-
 /**
  * Returns the github topics of a project.
  *
@@ -18,12 +15,7 @@ const isProd = false; // import.meta.env.PROD; // false;
  * @param isProd - boolean true calls fetch to github api, false returns mock data with same structure
  * @returns The github topics of a project as a Promise<String[]>
  */
-export async function getGithubTopics(
-  loginName: String,
-  projectName: String,
-  infoLog: boolean,
-  isProd: boolean,
-): Promise<String[]> {
+export async function getGithubTopics(loginName, projectName, infoLog, isProd) {
   if (infoLog) {
     console.group("getGithubTopics");
   }
@@ -36,17 +28,14 @@ export async function getGithubTopics(
       console.groupEnd();
     }
     // https://www.npmjs.com/package/jsonpath MIT License
-    return Promise.resolve(
-      jp.query(await returnData(loginName, projectName, infoLog, isProd), "$.topics[*]") as Array<String>,
-    );
+    return Promise.resolve(jp.query(await returnData(loginName, projectName, infoLog, isProd), "$.topics[*]"));
   } else {
     if (infoLog) {
       console.groupEnd();
     }
-    return Promise.resolve([] as Array<String>);
+    return Promise.resolve([]);
   }
 }
-
 /**
  * Returns the github the project object / json of a project.
  *
@@ -59,11 +48,10 @@ export async function getGithubTopics(
  * @param isProd - boolean true calls fetch to github api, false returns mock data with same structure
  * @returns The github the project object / json of a project Promise<any>
  */
-async function returnData(loginName: String, projectName: String, infoLog: boolean, isProd: boolean) {
+async function returnData(loginName, projectName, infoLog, isProd) {
   if (isProd) {
     // get from github project api
     const GITHUB_API_PROJECT_URL = GITHUB_API_BASE_URL + "repos/" + loginName + "/";
-
     const response = await fetch(GITHUB_API_PROJECT_URL + projectName);
     if (!response.ok) {
       if (infoLog) {
