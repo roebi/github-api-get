@@ -44,41 +44,39 @@ and return this Message Object / Json:
 
 see [github - rest - resources-in-the-rest-api - rate-limiting](https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting)
 
-## API
+## API - implemented
 
-### github-api(loginName, projectName?)
-
-get project info or user info
-
-Returns a `Promise<any>` with the project info or user info
-
-#### loginName
-
-Type: `string`
-
-login of user
-
-#### projectName (optional)
-
-Type: `string`
-
-name of the project of a user login if projectName i set
-
-#### return
-
-a Json / Object of a project
-
-or
-
-a Json / Object of a user login if only loginName is set
-
-see Example answer Json / Object of a project
-
-### getGithubTopics(loginName, projectName)
+### getGithubTopics(loginName, projectName, infoLog, isProd)
 
 get project topics as a Array
 
-Returns a `Promise<Array>` with the list of the project topics
+#### loginName
+
+Type: `String`
+
+The github login name
+
+#### projectName
+
+Type: `String`
+
+The github project namen of the project of a user login
+
+#### infoLog
+
+Type: `boolean`
+
+true Logs group and info into the console
+
+#### isProd
+
+Type: `boolean`
+
+true Calls fetch to github api, false returns mock data with same structure
+
+#### return
+
+Returns a `Promise<String[]>` with the list of the project topics
 
 i.e.
 
@@ -90,6 +88,54 @@ i.e.
   "starter"
 ]
 ```
+
+## tip on the behavior of the function
+
+look in the tests: test.ts
+
+## API - not yet implemented
+
+### github-api(loginName, projectName?, infoLog, isProd)
+
+get project info or user info
+
+Returns a `Promise<any>` with the project info or user info
+
+#### loginName
+
+Type: `String`
+
+The github login name
+
+#### projectName (optional)
+
+Type: `String`
+
+The github project namen of the project of a user login
+
+#### infoLog
+
+Type: `boolean`
+
+true Logs group and info into the console
+
+#### isProd
+
+Type: `boolean`
+
+true Calls fetch to github api, false returns mock data with same structure
+
+#### return
+
+Returns a `Promise<any>`
+
+with a Json / Object of a project
+
+or
+
+with a Json / Object of a user login if only loginName is set
+
+see Example answer Json / Object of a project
 
 ## Example answer Json / Object of a project
 
@@ -130,3 +176,6 @@ Github Meta Data of user login 'roebi'
   "bio": "..."
 }
 ```
+## tip on the behavior of the function
+
+look in the tests: test.ts
