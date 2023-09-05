@@ -176,6 +176,7 @@ Github Meta Data of user login 'roebi'
   "bio": "..."
 }
 ```
+
 ## tip on the behavior of the function
 
 look in the tests: test.ts
