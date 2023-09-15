@@ -1,6 +1,6 @@
 {
-  "name": "github-api",
-  "version": "0.2.2",
+  "name": "github-api-get",
+  "version": "0.3.0",
   "description": "use github api",
   "type": "module",
   "exports": "./githubApi.ts",
