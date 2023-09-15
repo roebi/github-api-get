@@ -1,15 +1,15 @@
-## github-api
+## github-api-get
 
-- use github api to get project info, i.e. its topics or user info
+- use github-api-get to get project info, i.e. its topics or user info
 
-- github api for a project - only root GET request
+- github-api-get for a project - only root GET request
 
-- github api for a user - only root GET request
+- github-api-get for a user - only root GET request
 
 ## Install
 
 ```git bash
-npm install github-api
+npm install github-api-get
 ```
 
 ## Usage
@@ -73,7 +73,7 @@ The github login name
 
 Type: `String`
 
-The github project namen of the project of a user login
+The github project name of the project of a user login
 
 #### infoLog
 

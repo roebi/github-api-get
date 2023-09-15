@@ -1,6 +1,6 @@
 {
   "name": "github-api-get",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "use github api",
   "type": "module",
   "exports": "./githubApi.ts",
@@ -48,7 +48,7 @@
       "compile": false
     }
   },
-  "repository": "github:roebi/github-api.git",
+  "repository": "github:roebi/github-api-get.git",
   "keywords": [
     "github-api",
     "github-meta",
@@ -57,9 +57,9 @@
   "author": "roebi",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/roebi/github-api/issues"
+    "url": "https://github.com/roebi/github-api-get/issues"
   },
-  "homepage": "https://github.com/roebi/github-api#readme",
+  "homepage": "https://github.com/roebi/github-api-get#readme",
   "dependencies": {
     "jsonpath": "^1.1.1",
     "node-fetch": "^3.3.2"
