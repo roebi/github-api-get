@@ -11,7 +11,7 @@
   // "forwardPorts": [],
 
   // Use 'postCreateCommand' to run commands after the container is created.
-  "postCreateCommand": "npm install",
+  "postCreateCommand": "sudo apt-get update -y; sudo apt-get install -y xdg-utils; nvm install; npm install",
 
   // Configure tool-specific properties.
   "customizations": {
