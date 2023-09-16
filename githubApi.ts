@@ -4,7 +4,7 @@ import fetch from "node-fetch";
 import jp from "jsonpath";
 import { GITHUB_API_BASE_URL } from "./consts.js";
 
-const isProd = false; // import.meta.env.PROD; // false;
+// const isProd = false; // import.meta.env.PROD; // false;
 
 /**
  * Returns the github topics of a project.
