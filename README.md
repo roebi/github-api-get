@@ -38,6 +38,7 @@ export async function getGithubTopicsFromGithub() {
   console.groupEnd();
 }
 
+// run the example
 await getGithubTopicsFromGithub();
 
 // TODO ...
