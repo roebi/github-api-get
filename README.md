@@ -16,13 +16,19 @@ npm install github-api-get
 
 ```javascript
 ---
-import { getGithubTopics } from "./githubApi.js";
+// in a module
+export {};
 
-// async ... getGithubTopics from github:
+// import the function from the library
+import { getGithubTopics } from "github-api-get";
+
+// define a example usage function
+export async function getGithubTopicsFromGithub() {
   const loginName = "roebi";
   const projectName = "01-01-vanilla-HTML5-starter-page";
   const infoLog = true;
   const isProd = true;
+
   const githubTopics = getGithubTopics(loginName, projectName, infoLog, isProd) as Promise<String[]>;
 
   const realGithubTopics = await githubTopics;
@@ -30,7 +36,12 @@ import { getGithubTopics } from "./githubApi.js";
   console.info("realGithubTopics");
   console.info(realGithubTopics);
   console.groupEnd();
+}
 
+// run the example
+await getGithubTopicsFromGithub();
+
+// TODO ...
 // if you need a part of the project information
 // github-api.project.topics
 

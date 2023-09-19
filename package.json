@@ -1,24 +1,24 @@
 {
   "name": "github-api-get",
-  "version": "0.3.5",
+  "version": "0.3.6",
   "description": "use github api",
   "type": "module",
   "exports": {
     ".": {
-      "types": "./githubApi.d.ts",
-      "module": "./githubApi.js",
-      "import": "./githubApi.js",
-      "default": "./githubApi.js"
+      "types": "./githubApiGet.d.ts",
+      "module": "./githubApiGet.js",
+      "import": "./githubApiGet.js",
+      "default": "./githubApiGet.js"
     },
     "./package.json": "./package.json"
   },
-  "types": "./githubApi.d.ts",
+  "types": "./githubApiGet.d.ts",
   "files": [
-    "./githubApi.d.ts",
-    "./githubApi.ts",
+    "./githubApiGet.d.ts",
+    "./githubApiGet.ts",
     "./decs.d.ts",
     "./consts.ts",
-    "./githubApi.js",
+    "./githubApiGet.js",
     "./consts.js",
     "LICENSE",
     "README.md"

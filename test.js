@@ -1,5 +1,5 @@
 import test from "ava";
-import { getGithubTopics } from "./githubApi.js";
+import { getGithubTopics } from "./githubApiGet.js";
 test("foo", (t) => {
   t.pass();
 });
