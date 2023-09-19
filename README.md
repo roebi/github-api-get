@@ -17,7 +17,7 @@ npm install github-api-get
 ```javascript
 ---
 // in a module
-export {}
+export {};
 
 // import the function from the library
 import { getGithubTopics } from "github-api-get";
