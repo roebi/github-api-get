@@ -26,7 +26,7 @@
         },
         {
           "functionName": "SafeMap",
-          "ranges": [{ "startOffset": 11613, "endOffset": 11641, "count": 640 }],
+          "ranges": [{ "startOffset": 11613, "endOffset": 11641, "count": 518 }],
           "isBlockCoverage": false
         },
         {
@@ -36,7 +36,7 @@
         },
         {
           "functionName": "SafeSet",
-          "ranges": [{ "startOffset": 11942, "endOffset": 11970, "count": 637 }],
+          "ranges": [{ "startOffset": 11942, "endOffset": 11970, "count": 515 }],
           "isBlockCoverage": false
         },
         {
@@ -199,12 +199,12 @@
         },
         {
           "functionName": "compileForInternalLoader",
-          "ranges": [{ "startOffset": 10138, "endOffset": 10960, "count": 2657 }],
+          "ranges": [{ "startOffset": 10138, "endOffset": 10960, "count": 2651 }],
           "isBlockCoverage": false
         },
         {
           "functionName": "requireBuiltin",
-          "ranges": [{ "startOffset": 11155, "endOffset": 11522, "count": 2554 }],
+          "ranges": [{ "startOffset": 11155, "endOffset": 11522, "count": 2548 }],
           "isBlockCoverage": false
         }
       ]
@@ -669,7 +669,7 @@
         },
         {
           "functionName": "validateString",
-          "ranges": [{ "startOffset": 4097, "endOffset": 4229, "count": 11441 }],
+          "ranges": [{ "startOffset": 4097, "endOffset": 4229, "count": 11483 }],
           "isBlockCoverage": false
         },
         {
@@ -3327,7 +3327,7 @@
       "functions": [
         {
           "functionName": "<instance_members_initializer>",
-          "ranges": [{ "startOffset": 2919, "endOffset": 3708, "count": 2543 }],
+          "ranges": [{ "startOffset": 2919, "endOffset": 3708, "count": 2554 }],
           "isBlockCoverage": false
         },
         {
@@ -8123,7 +8123,7 @@
         {
           "functionName": "initCJSParse",
           "ranges": [
-            { "startOffset": 1583, "endOffset": 1981, "count": 9 },
+            { "startOffset": 1583, "endOffset": 1981, "count": 3 },
             { "startOffset": 1657, "endOffset": 1732, "count": 0 },
             { "startOffset": 1890, "endOffset": 1975, "count": 0 }
           ],
@@ -8181,7 +8181,7 @@
           "ranges": [
             { "startOffset": 4410, "endOffset": 5848, "count": 35 },
             { "startOffset": 4652, "endOffset": 4710, "count": 0 },
-            { "startOffset": 4729, "endOffset": 4750, "count": 9 },
+            { "startOffset": 4729, "endOffset": 4750, "count": 3 },
             { "startOffset": 4875, "endOffset": 4897, "count": 2 },
             { "startOffset": 4898, "endOffset": 4927, "count": 33 }
           ],
@@ -8628,7 +8628,7 @@
         {
           "functionName": "init",
           "ranges": [
-            { "startOffset": 1221, "endOffset": 33616, "count": 9 },
+            { "startOffset": 1221, "endOffset": 33616, "count": 3 },
             { "startOffset": 1245, "endOffset": 33615, "count": 1 }
           ],
           "isBlockCoverage": true
@@ -8893,7 +8893,14 @@
       ]
     },
     {
-      "scriptId": "490",
+      "scriptId": "491",
+      "url": "",
+      "functions": [
+        { "functionName": "", "ranges": [{ "startOffset": 0, "endOffset": 17, "count": 1 }], "isBlockCoverage": true }
+      ]
+    },
+    {
+      "scriptId": "492",
       "url": "file:///workspaces/github-api-get/node_modules/arrify/index.js",
       "functions": [
         { "functionName": "", "ranges": [{ "startOffset": 0, "endOffset": 305, "count": 1 }], "isBlockCoverage": true },
@@ -8910,7 +8917,7 @@
       ]
     },
     {
-      "scriptId": "491",
+      "scriptId": "493",
       "url": "file:///workspaces/github-api-get/node_modules/figures/index.js",
       "functions": [
         {
@@ -8945,14 +8952,14 @@
       ]
     },
     {
-      "scriptId": "492",
+      "scriptId": "494",
       "url": "file:///workspaces/github-api-get/node_modules/yargs/index.mjs",
       "functions": [
         { "functionName": "", "ranges": [{ "startOffset": 0, "endOffset": 231, "count": 1 }], "isBlockCoverage": true }
       ]
     },
     {
-      "scriptId": "493",
+      "scriptId": "495",
       "url": "file:///workspaces/github-api-get/node_modules/yargs/helpers/helpers.mjs",
       "functions": [
         { "functionName": "", "ranges": [{ "startOffset": 0, "endOffset": 384, "count": 1 }], "isBlockCoverage": true },
@@ -8964,7 +8971,7 @@
       ]
     },
     {
-      "scriptId": "494",
+      "scriptId": "496",
       "url": "file:///workspaces/github-api-get/node_modules/ava/lib/api.js",
       "functions": [
         {
@@ -9143,7 +9150,14 @@
       ]
     },
     {
-      "scriptId": "495",
+      "scriptId": "497",
+      "url": "",
+      "functions": [
+        { "functionName": "", "ranges": [{ "startOffset": 0, "endOffset": 12, "count": 1 }], "isBlockCoverage": true }
+      ]
+    },
+    {
+      "scriptId": "498",
       "url": "node:os",
       "functions": [
         {
@@ -9325,7 +9339,7 @@
       ]
     },
     {
-      "scriptId": "496",
+      "scriptId": "499",
       "url": "file:///workspaces/github-api-get/node_modules/ava/lib/chalk.js",
       "functions": [
         { "functionName": "", "ranges": [{ "startOffset": 0, "endOffset": 351, "count": 1 }], "isBlockCoverage": true },
@@ -9340,7 +9354,7 @@
       ]
     },
     {
-      "scriptId": "497",
+      "scriptId": "500",
       "url": "file:///workspaces/github-api-get/node_modules/ava/lib/environment-variables.js",
       "functions": [
         { "functionName": "", "ranges": [{ "startOffset": 0, "endOffset": 371, "count": 1 }], "isBlockCoverage": true },
@@ -9355,7 +9369,7 @@
       ]
     },
     {
-      "scriptId": "498",
+      "scriptId": "501",
       "url": "file:///workspaces/github-api-get/node_modules/ava/lib/extensions.js",
       "functions": [
         {
@@ -9392,7 +9406,7 @@
       ]
     },
     {
-      "scriptId": "499",
+      "scriptId": "502",
       "url": "file:///workspaces/github-api-get/node_modules/ava/lib/globs.js",
       "functions": [
         {
@@ -9492,20 +9506,6 @@
           "ranges": [{ "startOffset": 5656, "endOffset": 5683, "count": 0 }],
           "isBlockCoverage": false
         }
-      ]
-    },
-    {
-      "scriptId": "501",
-      "url": "",
-      "functions": [
-        { "functionName": "", "ranges": [{ "startOffset": 0, "endOffset": 17, "count": 1 }], "isBlockCoverage": true }
-      ]
-    },
-    {
-      "scriptId": "502",
-      "url": "",
-      "functions": [
-        { "functionName": "", "ranges": [{ "startOffset": 0, "endOffset": 12, "count": 1 }], "isBlockCoverage": true }
       ]
     },
     {
@@ -35068,7 +35068,7 @@
       ]
     }
   ],
-  "timestamp": 1558.871162,
+  "timestamp": 1797.061124,
   "source-map-cache": {
     "file:///workspaces/github-api-get/node_modules/chunkd/dist/chunkd.js": {
       "lineLengths": [13, 62, 38, 30, 42, 35, 59, 51, 47, 1, 25, 24, 34],

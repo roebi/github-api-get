@@ -26,7 +26,7 @@
         },
         {
           "functionName": "SafeMap",
-          "ranges": [{ "startOffset": 11613, "endOffset": 11641, "count": 432 }],
+          "ranges": [{ "startOffset": 11613, "endOffset": 11641, "count": 430 }],
           "isBlockCoverage": false
         },
         {
@@ -36,7 +36,7 @@
         },
         {
           "functionName": "SafeSet",
-          "ranges": [{ "startOffset": 11942, "endOffset": 11970, "count": 431 }],
+          "ranges": [{ "startOffset": 11942, "endOffset": 11970, "count": 429 }],
           "isBlockCoverage": false
         },
         {
@@ -42865,7 +42865,7 @@
       ]
     }
   ],
-  "timestamp": 1558.809941,
+  "timestamp": 1796.977533,
   "source-map-cache": {
     "file:///workspaces/github-api-get/node_modules/write-file-atomic/node_modules/signal-exit/dist/cjs/index.js": {
       "lineLengths": [
