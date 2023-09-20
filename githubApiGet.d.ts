@@ -10,4 +10,9 @@
  * @param {boolean} isProd - true Calls fetch to github api, false returns mock data with same structure
  * @returns {Promise<String[]>} The github topics of a project
  */
-export declare function getGithubTopics(loginName: String, projectName: String, infoLog: boolean, isProd: boolean): Promise<String[]>;
+export declare function getGithubTopics(
+  loginName: String,
+  projectName: String,
+  infoLog: boolean,
+  isProd: boolean,
+): Promise<String[]>;
