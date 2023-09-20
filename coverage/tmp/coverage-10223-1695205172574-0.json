@@ -26,7 +26,7 @@
         },
         {
           "functionName": "SafeMap",
-          "ranges": [{ "startOffset": 11613, "endOffset": 11641, "count": 485 }],
+          "ranges": [{ "startOffset": 11613, "endOffset": 11641, "count": 640 }],
           "isBlockCoverage": false
         },
         {
@@ -36,7 +36,7 @@
         },
         {
           "functionName": "SafeSet",
-          "ranges": [{ "startOffset": 11942, "endOffset": 11970, "count": 482 }],
+          "ranges": [{ "startOffset": 11942, "endOffset": 11970, "count": 637 }],
           "isBlockCoverage": false
         },
         {
@@ -199,12 +199,12 @@
         },
         {
           "functionName": "compileForInternalLoader",
-          "ranges": [{ "startOffset": 10138, "endOffset": 10960, "count": 2651 }],
+          "ranges": [{ "startOffset": 10138, "endOffset": 10960, "count": 2657 }],
           "isBlockCoverage": false
         },
         {
           "functionName": "requireBuiltin",
-          "ranges": [{ "startOffset": 11155, "endOffset": 11522, "count": 2548 }],
+          "ranges": [{ "startOffset": 11155, "endOffset": 11522, "count": 2554 }],
           "isBlockCoverage": false
         }
       ]
@@ -669,7 +669,7 @@
         },
         {
           "functionName": "validateString",
-          "ranges": [{ "startOffset": 4097, "endOffset": 4229, "count": 11430 }],
+          "ranges": [{ "startOffset": 4097, "endOffset": 4229, "count": 11441 }],
           "isBlockCoverage": false
         },
         {
@@ -3327,7 +3327,7 @@
       "functions": [
         {
           "functionName": "<instance_members_initializer>",
-          "ranges": [{ "startOffset": 2919, "endOffset": 3708, "count": 2541 }],
+          "ranges": [{ "startOffset": 2919, "endOffset": 3708, "count": 2543 }],
           "isBlockCoverage": false
         },
         {
@@ -3527,29 +3527,29 @@
         },
         {
           "functionName": "Dirent",
-          "ranges": [{ "startOffset": 3784, "endOffset": 3887, "count": 72 }],
+          "ranges": [{ "startOffset": 3784, "endOffset": 3887, "count": 73 }],
           "isBlockCoverage": true
         },
         {
           "functionName": "isDirectory",
-          "ranges": [{ "startOffset": 3891, "endOffset": 3952, "count": 132 }],
+          "ranges": [{ "startOffset": 3891, "endOffset": 3952, "count": 134 }],
           "isBlockCoverage": true
         },
         {
           "functionName": "isFile",
-          "ranges": [{ "startOffset": 3956, "endOffset": 4013, "count": 72 }],
+          "ranges": [{ "startOffset": 3956, "endOffset": 4013, "count": 73 }],
           "isBlockCoverage": true
         },
         {
           "functionName": "isSymbolicLink",
-          "ranges": [{ "startOffset": 4158, "endOffset": 4223, "count": 72 }],
+          "ranges": [{ "startOffset": 4158, "endOffset": 4223, "count": 73 }],
           "isBlockCoverage": true
         },
         {
           "functionName": "getDirents",
           "ranges": [
             { "startOffset": 5515, "endOffset": 6630, "count": 10 },
-            { "startOffset": 5739, "endOffset": 6412, "count": 72 },
+            { "startOffset": 5739, "endOffset": 6412, "count": 73 },
             { "startOffset": 5808, "endOffset": 6334, "count": 0 },
             { "startOffset": 6477, "endOffset": 6628, "count": 0 }
           ],
@@ -8123,7 +8123,7 @@
         {
           "functionName": "initCJSParse",
           "ranges": [
-            { "startOffset": 1583, "endOffset": 1981, "count": 3 },
+            { "startOffset": 1583, "endOffset": 1981, "count": 9 },
             { "startOffset": 1657, "endOffset": 1732, "count": 0 },
             { "startOffset": 1890, "endOffset": 1975, "count": 0 }
           ],
@@ -8181,7 +8181,7 @@
           "ranges": [
             { "startOffset": 4410, "endOffset": 5848, "count": 35 },
             { "startOffset": 4652, "endOffset": 4710, "count": 0 },
-            { "startOffset": 4729, "endOffset": 4750, "count": 3 },
+            { "startOffset": 4729, "endOffset": 4750, "count": 9 },
             { "startOffset": 4875, "endOffset": 4897, "count": 2 },
             { "startOffset": 4898, "endOffset": 4927, "count": 33 }
           ],
@@ -8628,7 +8628,7 @@
         {
           "functionName": "init",
           "ranges": [
-            { "startOffset": 1221, "endOffset": 33616, "count": 3 },
+            { "startOffset": 1221, "endOffset": 33616, "count": 9 },
             { "startOffset": 1245, "endOffset": 33615, "count": 1 }
           ],
           "isBlockCoverage": true
@@ -8893,14 +8893,7 @@
       ]
     },
     {
-      "scriptId": "491",
-      "url": "",
-      "functions": [
-        { "functionName": "", "ranges": [{ "startOffset": 0, "endOffset": 17, "count": 1 }], "isBlockCoverage": true }
-      ]
-    },
-    {
-      "scriptId": "492",
+      "scriptId": "490",
       "url": "file:///workspaces/github-api-get/node_modules/arrify/index.js",
       "functions": [
         { "functionName": "", "ranges": [{ "startOffset": 0, "endOffset": 305, "count": 1 }], "isBlockCoverage": true },
@@ -8917,7 +8910,7 @@
       ]
     },
     {
-      "scriptId": "493",
+      "scriptId": "491",
       "url": "file:///workspaces/github-api-get/node_modules/figures/index.js",
       "functions": [
         {
@@ -8952,14 +8945,14 @@
       ]
     },
     {
-      "scriptId": "494",
+      "scriptId": "492",
       "url": "file:///workspaces/github-api-get/node_modules/yargs/index.mjs",
       "functions": [
         { "functionName": "", "ranges": [{ "startOffset": 0, "endOffset": 231, "count": 1 }], "isBlockCoverage": true }
       ]
     },
     {
-      "scriptId": "495",
+      "scriptId": "493",
       "url": "file:///workspaces/github-api-get/node_modules/yargs/helpers/helpers.mjs",
       "functions": [
         { "functionName": "", "ranges": [{ "startOffset": 0, "endOffset": 384, "count": 1 }], "isBlockCoverage": true },
@@ -8971,7 +8964,7 @@
       ]
     },
     {
-      "scriptId": "496",
+      "scriptId": "494",
       "url": "file:///workspaces/github-api-get/node_modules/ava/lib/api.js",
       "functions": [
         {
@@ -9150,14 +9143,7 @@
       ]
     },
     {
-      "scriptId": "497",
-      "url": "",
-      "functions": [
-        { "functionName": "", "ranges": [{ "startOffset": 0, "endOffset": 12, "count": 1 }], "isBlockCoverage": true }
-      ]
-    },
-    {
-      "scriptId": "498",
+      "scriptId": "495",
       "url": "node:os",
       "functions": [
         {
@@ -9339,7 +9325,7 @@
       ]
     },
     {
-      "scriptId": "499",
+      "scriptId": "496",
       "url": "file:///workspaces/github-api-get/node_modules/ava/lib/chalk.js",
       "functions": [
         { "functionName": "", "ranges": [{ "startOffset": 0, "endOffset": 351, "count": 1 }], "isBlockCoverage": true },
@@ -9354,7 +9340,7 @@
       ]
     },
     {
-      "scriptId": "500",
+      "scriptId": "497",
       "url": "file:///workspaces/github-api-get/node_modules/ava/lib/environment-variables.js",
       "functions": [
         { "functionName": "", "ranges": [{ "startOffset": 0, "endOffset": 371, "count": 1 }], "isBlockCoverage": true },
@@ -9369,7 +9355,7 @@
       ]
     },
     {
-      "scriptId": "501",
+      "scriptId": "498",
       "url": "file:///workspaces/github-api-get/node_modules/ava/lib/extensions.js",
       "functions": [
         {
@@ -9406,7 +9392,7 @@
       ]
     },
     {
-      "scriptId": "502",
+      "scriptId": "499",
       "url": "file:///workspaces/github-api-get/node_modules/ava/lib/globs.js",
       "functions": [
         {
@@ -9506,6 +9492,20 @@
           "ranges": [{ "startOffset": 5656, "endOffset": 5683, "count": 0 }],
           "isBlockCoverage": false
         }
+      ]
+    },
+    {
+      "scriptId": "501",
+      "url": "",
+      "functions": [
+        { "functionName": "", "ranges": [{ "startOffset": 0, "endOffset": 17, "count": 1 }], "isBlockCoverage": true }
+      ]
+    },
+    {
+      "scriptId": "502",
+      "url": "",
+      "functions": [
+        { "functionName": "", "ranges": [{ "startOffset": 0, "endOffset": 12, "count": 1 }], "isBlockCoverage": true }
       ]
     },
     {
@@ -14154,6 +14154,21 @@
     },
     {
       "scriptId": "557",
+      "url": "file:///workspaces/github-api-get/node_modules/strip-ansi/index.js",
+      "functions": [
+        { "functionName": "", "ranges": [{ "startOffset": 0, "endOffset": 468, "count": 1 }], "isBlockCoverage": true },
+        {
+          "functionName": "stripAnsi",
+          "ranges": [
+            { "startOffset": 80, "endOffset": 467, "count": 69 },
+            { "startOffset": 142, "endOffset": 220, "count": 0 }
+          ],
+          "isBlockCoverage": true
+        }
+      ]
+    },
+    {
+      "scriptId": "558",
       "url": "file:///workspaces/github-api-get/node_modules/supertap/dist/index.js",
       "functions": [
         {
@@ -14184,22 +14199,19 @@
       ]
     },
     {
-      "scriptId": "558",
-      "url": "file:///workspaces/github-api-get/node_modules/strip-ansi/index.js",
+      "scriptId": "559",
+      "url": "file:///workspaces/github-api-get/node_modules/cliui/index.mjs",
       "functions": [
-        { "functionName": "", "ranges": [{ "startOffset": 0, "endOffset": 468, "count": 1 }], "isBlockCoverage": true },
+        { "functionName": "", "ranges": [{ "startOffset": 0, "endOffset": 309, "count": 1 }], "isBlockCoverage": true },
         {
-          "functionName": "stripAnsi",
-          "ranges": [
-            { "startOffset": 80, "endOffset": 467, "count": 69 },
-            { "startOffset": 142, "endOffset": 220, "count": 0 }
-          ],
-          "isBlockCoverage": true
+          "functionName": "ui",
+          "ranges": [{ "startOffset": 170, "endOffset": 308, "count": 0 }],
+          "isBlockCoverage": false
         }
       ]
     },
     {
-      "scriptId": "559",
+      "scriptId": "560",
       "url": "file:///workspaces/github-api-get/node_modules/escalade/sync/index.mjs",
       "functions": [
         { "functionName": "", "ranges": [{ "startOffset": 0, "endOffset": 404, "count": 1 }], "isBlockCoverage": true },
@@ -14211,18 +14223,6 @@
             { "startOffset": 344, "endOffset": 398, "count": 0 }
           ],
           "isBlockCoverage": true
-        }
-      ]
-    },
-    {
-      "scriptId": "560",
-      "url": "file:///workspaces/github-api-get/node_modules/cliui/index.mjs",
-      "functions": [
-        { "functionName": "", "ranges": [{ "startOffset": 0, "endOffset": 309, "count": 1 }], "isBlockCoverage": true },
-        {
-          "functionName": "ui",
-          "ranges": [{ "startOffset": 170, "endOffset": 308, "count": 0 }],
-          "isBlockCoverage": false
         }
       ]
     },
@@ -16392,6 +16392,28 @@
     },
     {
       "scriptId": "583",
+      "url": "file:///workspaces/github-api-get/node_modules/chalk/source/utilities.js",
+      "functions": [
+        { "functionName": "", "ranges": [{ "startOffset": 0, "endOffset": 997, "count": 1 }], "isBlockCoverage": true },
+        {
+          "functionName": "stringReplaceAll",
+          "ranges": [{ "startOffset": 78, "endOffset": 552, "count": 0 }],
+          "isBlockCoverage": false
+        },
+        {
+          "functionName": "stringEncaseCRLFWithFirstIndex",
+          "ranges": [
+            { "startOffset": 561, "endOffset": 996, "count": 1 },
+            { "startOffset": 681, "endOffset": 910, "count": 2 },
+            { "startOffset": 774, "endOffset": 785, "count": 0 },
+            { "startOffset": 814, "endOffset": 822, "count": 0 }
+          ],
+          "isBlockCoverage": true
+        }
+      ]
+    },
+    {
+      "scriptId": "584",
       "url": "file:///workspaces/github-api-get/node_modules/globby/ignore.js",
       "functions": [
         {
@@ -16447,7 +16469,7 @@
       ]
     },
     {
-      "scriptId": "584",
+      "scriptId": "585",
       "url": "file:///workspaces/github-api-get/node_modules/globby/utilities.js",
       "functions": [
         { "functionName": "", "ranges": [{ "startOffset": 0, "endOffset": 462, "count": 1 }], "isBlockCoverage": true },
@@ -16472,7 +16494,7 @@
       ]
     },
     {
-      "scriptId": "585",
+      "scriptId": "586",
       "url": "file:///workspaces/github-api-get/node_modules/pkg-conf/node_modules/find-up/index.js",
       "functions": [
         {
@@ -16525,28 +16547,6 @@
       ]
     },
     {
-      "scriptId": "586",
-      "url": "file:///workspaces/github-api-get/node_modules/chalk/source/utilities.js",
-      "functions": [
-        { "functionName": "", "ranges": [{ "startOffset": 0, "endOffset": 997, "count": 1 }], "isBlockCoverage": true },
-        {
-          "functionName": "stringReplaceAll",
-          "ranges": [{ "startOffset": 78, "endOffset": 552, "count": 0 }],
-          "isBlockCoverage": false
-        },
-        {
-          "functionName": "stringEncaseCRLFWithFirstIndex",
-          "ranges": [
-            { "startOffset": 561, "endOffset": 996, "count": 1 },
-            { "startOffset": 681, "endOffset": 910, "count": 2 },
-            { "startOffset": 774, "endOffset": 785, "count": 0 },
-            { "startOffset": 814, "endOffset": 822, "count": 0 }
-          ],
-          "isBlockCoverage": true
-        }
-      ]
-    },
-    {
       "scriptId": "587",
       "url": "file:///workspaces/github-api-get/node_modules/load-json-file/index.js",
       "functions": [
@@ -16589,23 +16589,6 @@
     },
     {
       "scriptId": "589",
-      "url": "file:///workspaces/github-api-get/node_modules/code-excerpt/dist/index.js",
-      "functions": [
-        { "functionName": "", "ranges": [{ "startOffset": 0, "endOffset": 934, "count": 1 }], "isBlockCoverage": true },
-        {
-          "functionName": "generateLineNumbers",
-          "ranges": [{ "startOffset": 74, "endOffset": 319, "count": 0 }],
-          "isBlockCoverage": false
-        },
-        {
-          "functionName": "codeExcerpt",
-          "ranges": [{ "startOffset": 341, "endOffset": 904, "count": 0 }],
-          "isBlockCoverage": false
-        }
-      ]
-    },
-    {
-      "scriptId": "590",
       "url": "file:///workspaces/github-api-get/node_modules/cli-truncate/index.js",
       "functions": [
         {
@@ -16621,6 +16604,23 @@
         {
           "functionName": "cliTruncate",
           "ranges": [{ "startOffset": 518, "endOffset": 2758, "count": 0 }],
+          "isBlockCoverage": false
+        }
+      ]
+    },
+    {
+      "scriptId": "590",
+      "url": "file:///workspaces/github-api-get/node_modules/code-excerpt/dist/index.js",
+      "functions": [
+        { "functionName": "", "ranges": [{ "startOffset": 0, "endOffset": 934, "count": 1 }], "isBlockCoverage": true },
+        {
+          "functionName": "generateLineNumbers",
+          "ranges": [{ "startOffset": 74, "endOffset": 319, "count": 0 }],
+          "isBlockCoverage": false
+        },
+        {
+          "functionName": "codeExcerpt",
+          "ranges": [{ "startOffset": 341, "endOffset": 904, "count": 0 }],
           "isBlockCoverage": false
         }
       ]
@@ -16934,6 +16934,13 @@
     },
     {
       "scriptId": "598",
+      "url": "file:///workspaces/github-api-get/node_modules/yargs/build/lib/completion-templates.js",
+      "functions": [
+        { "functionName": "", "ranges": [{ "startOffset": 0, "endOffset": 1452, "count": 1 }], "isBlockCoverage": true }
+      ]
+    },
+    {
+      "scriptId": "599",
       "url": "file:///workspaces/github-api-get/node_modules/yargs/build/lib/utils/levenshtein.js",
       "functions": [
         {
@@ -16946,13 +16953,6 @@
           "ranges": [{ "startOffset": 7, "endOffset": 1030, "count": 0 }],
           "isBlockCoverage": false
         }
-      ]
-    },
-    {
-      "scriptId": "599",
-      "url": "file:///workspaces/github-api-get/node_modules/yargs/build/lib/completion-templates.js",
-      "functions": [
-        { "functionName": "", "ranges": [{ "startOffset": 0, "endOffset": 1452, "count": 1 }], "isBlockCoverage": true }
       ]
     },
     {
@@ -17720,18 +17720,6 @@
     },
     {
       "scriptId": "611",
-      "url": "file:///workspaces/github-api-get/node_modules/slash/index.js",
-      "functions": [
-        { "functionName": "", "ranges": [{ "startOffset": 0, "endOffset": 285, "count": 1 }], "isBlockCoverage": true },
-        {
-          "functionName": "slash",
-          "ranges": [{ "startOffset": 15, "endOffset": 284, "count": 0 }],
-          "isBlockCoverage": false
-        }
-      ]
-    },
-    {
-      "scriptId": "612",
       "url": "file:///workspaces/github-api-get/node_modules/ansi-styles/index.js",
       "functions": [
         {
@@ -17811,36 +17799,19 @@
       ]
     },
     {
+      "scriptId": "612",
+      "url": "file:///workspaces/github-api-get/node_modules/slash/index.js",
+      "functions": [
+        { "functionName": "", "ranges": [{ "startOffset": 0, "endOffset": 285, "count": 1 }], "isBlockCoverage": true },
+        {
+          "functionName": "slash",
+          "ranges": [{ "startOffset": 15, "endOffset": 284, "count": 0 }],
+          "isBlockCoverage": false
+        }
+      ]
+    },
+    {
       "scriptId": "613",
-      "url": "file:///workspaces/github-api-get/node_modules/pkg-conf/node_modules/path-exists/index.js",
-      "functions": [
-        { "functionName": "", "ranges": [{ "startOffset": 0, "endOffset": 298, "count": 1 }], "isBlockCoverage": true },
-        {
-          "functionName": "pathExists",
-          "ranges": [{ "startOffset": 60, "endOffset": 180, "count": 0 }],
-          "isBlockCoverage": false
-        },
-        {
-          "functionName": "pathExistsSync",
-          "ranges": [{ "startOffset": 189, "endOffset": 297, "count": 0 }],
-          "isBlockCoverage": false
-        }
-      ]
-    },
-    {
-      "scriptId": "614",
-      "url": "file:///workspaces/github-api-get/node_modules/convert-to-spaces/dist/index.js",
-      "functions": [
-        { "functionName": "", "ranges": [{ "startOffset": 0, "endOffset": 158, "count": 1 }], "isBlockCoverage": true },
-        {
-          "functionName": "convertToSpaces",
-          "ranges": [{ "startOffset": 24, "endOffset": 124, "count": 0 }],
-          "isBlockCoverage": false
-        }
-      ]
-    },
-    {
-      "scriptId": "615",
       "url": "file:///workspaces/github-api-get/node_modules/pkg-conf/node_modules/locate-path/index.js",
       "functions": [
         {
@@ -17893,23 +17864,24 @@
       ]
     },
     {
-      "scriptId": "616",
-      "url": "file:///workspaces/github-api-get/node_modules/string-width/index.js",
+      "scriptId": "614",
+      "url": "file:///workspaces/github-api-get/node_modules/pkg-conf/node_modules/path-exists/index.js",
       "functions": [
+        { "functionName": "", "ranges": [{ "startOffset": 0, "endOffset": 298, "count": 1 }], "isBlockCoverage": true },
         {
-          "functionName": "",
-          "ranges": [{ "startOffset": 0, "endOffset": 1064, "count": 1 }],
-          "isBlockCoverage": true
+          "functionName": "pathExists",
+          "ranges": [{ "startOffset": 60, "endOffset": 180, "count": 0 }],
+          "isBlockCoverage": false
         },
         {
-          "functionName": "stringWidth",
-          "ranges": [{ "startOffset": 135, "endOffset": 1063, "count": 0 }],
+          "functionName": "pathExistsSync",
+          "ranges": [{ "startOffset": 189, "endOffset": 297, "count": 0 }],
           "isBlockCoverage": false
         }
       ]
     },
     {
-      "scriptId": "617",
+      "scriptId": "615",
       "url": "file:///workspaces/github-api-get/node_modules/slice-ansi/index.js",
       "functions": [
         {
@@ -17930,6 +17902,34 @@
         {
           "functionName": "sliceAnsi",
           "ranges": [{ "startOffset": 1422, "endOffset": 2689, "count": 0 }],
+          "isBlockCoverage": false
+        }
+      ]
+    },
+    {
+      "scriptId": "616",
+      "url": "file:///workspaces/github-api-get/node_modules/string-width/index.js",
+      "functions": [
+        {
+          "functionName": "",
+          "ranges": [{ "startOffset": 0, "endOffset": 1064, "count": 1 }],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "stringWidth",
+          "ranges": [{ "startOffset": 135, "endOffset": 1063, "count": 0 }],
+          "isBlockCoverage": false
+        }
+      ]
+    },
+    {
+      "scriptId": "617",
+      "url": "file:///workspaces/github-api-get/node_modules/convert-to-spaces/dist/index.js",
+      "functions": [
+        { "functionName": "", "ranges": [{ "startOffset": 0, "endOffset": 158, "count": 1 }], "isBlockCoverage": true },
+        {
+          "functionName": "convertToSpaces",
+          "ranges": [{ "startOffset": 24, "endOffset": 124, "count": 0 }],
           "isBlockCoverage": false
         }
       ]
@@ -25504,12 +25504,14 @@
           "functionName": "MurmurHash3.hash",
           "ranges": [
             { "startOffset": 1254, "endOffset": 3073, "count": 4 },
-            { "startOffset": 1433, "endOffset": 1492, "count": 1 },
+            { "startOffset": 1433, "endOffset": 1492, "count": 2 },
             { "startOffset": 1488, "endOffset": 1491, "count": 0 },
-            { "startOffset": 1505, "endOffset": 1569, "count": 1 },
-            { "startOffset": 1565, "endOffset": 1568, "count": 0 },
+            { "startOffset": 1505, "endOffset": 1569, "count": 2 },
+            { "startOffset": 1527, "endOffset": 1564, "count": 1 },
+            { "startOffset": 1565, "endOffset": 1568, "count": 1 },
             { "startOffset": 1582, "endOffset": 1647, "count": 3 },
-            { "startOffset": 1643, "endOffset": 1646, "count": 0 },
+            { "startOffset": 1604, "endOffset": 1642, "count": 2 },
+            { "startOffset": 1643, "endOffset": 1646, "count": 1 },
             { "startOffset": 1698, "endOffset": 1732, "count": 3 },
             { "startOffset": 1733, "endOffset": 1736, "count": 1 },
             { "startOffset": 1768, "endOffset": 1805, "count": 3 },
@@ -25518,7 +25520,7 @@
             { "startOffset": 1981, "endOffset": 2720, "count": 19 },
             { "startOffset": 2348, "endOffset": 2394, "count": 3 },
             { "startOffset": 2394, "endOffset": 2720, "count": 16 },
-            { "startOffset": 2790, "endOffset": 2843, "count": 0 },
+            { "startOffset": 2790, "endOffset": 2843, "count": 1 },
             { "startOffset": 2860, "endOffset": 2912, "count": 2 },
             { "startOffset": 2929, "endOffset": 2972, "count": 2 }
           ],
@@ -25526,10 +25528,7 @@
         },
         {
           "functionName": "MurmurHash3.result",
-          "ranges": [
-            { "startOffset": 3193, "endOffset": 3797, "count": 1 },
-            { "startOffset": 3300, "endOffset": 3524, "count": 0 }
-          ],
+          "ranges": [{ "startOffset": 3193, "endOffset": 3797, "count": 1 }],
           "isBlockCoverage": true
         },
         {
@@ -26051,7 +26050,7 @@
         {
           "functionName": "removeLeadingDotSegment",
           "ranges": [
-            { "startOffset": 1562, "endOffset": 2050, "count": 84 },
+            { "startOffset": 1562, "endOffset": 2050, "count": 85 },
             { "startOffset": 1824, "endOffset": 2030, "count": 17 },
             { "startOffset": 1943, "endOffset": 2024, "count": 0 }
           ],
@@ -26250,12 +26249,12 @@
         },
         {
           "functionName": "matchAny",
-          "ranges": [{ "startOffset": 7452, "endOffset": 7558, "count": 74 }],
+          "ranges": [{ "startOffset": 7452, "endOffset": 7558, "count": 75 }],
           "isBlockCoverage": true
         },
         {
           "functionName": "",
-          "ranges": [{ "startOffset": 7518, "endOffset": 7554, "count": 3271 }],
+          "ranges": [{ "startOffset": 7518, "endOffset": 7554, "count": 3325 }],
           "isBlockCoverage": true
         },
         {
@@ -27894,7 +27893,7 @@
           "ranges": [
             { "startOffset": 1872, "endOffset": 2160, "count": 10 },
             { "startOffset": 1926, "endOffset": 2005, "count": 0 },
-            { "startOffset": 2047, "endOffset": 2115, "count": 72 }
+            { "startOffset": 2047, "endOffset": 2115, "count": 73 }
           ],
           "isBlockCoverage": true
         },
@@ -27906,7 +27905,7 @@
         {
           "functionName": "_handleEntry",
           "ranges": [
-            { "startOffset": 2428, "endOffset": 3049, "count": 72 },
+            { "startOffset": 2428, "endOffset": 3049, "count": 73 },
             { "startOffset": 2509, "endOffset": 2540, "count": 0 },
             { "startOffset": 2798, "endOffset": 2845, "count": 2 },
             { "startOffset": 2885, "endOffset": 2944, "count": 12 },
@@ -27987,12 +27986,12 @@
         },
         {
           "functionName": "",
-          "ranges": [{ "startOffset": 932, "endOffset": 1105, "count": 72 }],
+          "ranges": [{ "startOffset": 932, "endOffset": 1105, "count": 73 }],
           "isBlockCoverage": true
         },
         {
           "functionName": "",
-          "ranges": [{ "startOffset": 1269, "endOffset": 1313, "count": 72 }],
+          "ranges": [{ "startOffset": 1269, "endOffset": 1313, "count": 73 }],
           "isBlockCoverage": true
         },
         {
@@ -28005,13 +28004,13 @@
         },
         {
           "functionName": "makeRplTaskEntry",
-          "ranges": [{ "startOffset": 1625, "endOffset": 2247, "count": 72 }],
+          "ranges": [{ "startOffset": 1625, "endOffset": 2247, "count": 73 }],
           "isBlockCoverage": true
         },
         {
           "functionName": "",
           "ranges": [
-            { "startOffset": 1681, "endOffset": 2244, "count": 72 },
+            { "startOffset": 1681, "endOffset": 2244, "count": 73 },
             { "startOffset": 1799, "endOffset": 2243, "count": 0 }
           ],
           "isBlockCoverage": true
@@ -28169,8 +28168,8 @@
         {
           "functionName": "each",
           "ranges": [
-            { "startOffset": 572, "endOffset": 688, "count": 72 },
-            { "startOffset": 653, "endOffset": 659, "count": 62 },
+            { "startOffset": 572, "endOffset": 688, "count": 73 },
+            { "startOffset": 653, "endOffset": 659, "count": 63 },
             { "startOffset": 661, "endOffset": 684, "count": 10 }
           ],
           "isBlockCoverage": true
@@ -28182,12 +28181,12 @@
         },
         {
           "functionName": "",
-          "ranges": [{ "startOffset": 922, "endOffset": 1008, "count": 72 }],
+          "ranges": [{ "startOffset": 922, "endOffset": 1008, "count": 73 }],
           "isBlockCoverage": true
         },
         {
           "functionName": "",
-          "ranges": [{ "startOffset": 954, "endOffset": 1001, "count": 72 }],
+          "ranges": [{ "startOffset": 954, "endOffset": 1001, "count": 73 }],
           "isBlockCoverage": true
         }
       ]
@@ -28260,7 +28259,7 @@
         {
           "functionName": "joinPathSegments",
           "ranges": [
-            { "startOffset": 112, "endOffset": 373, "count": 72 },
+            { "startOffset": 112, "endOffset": 373, "count": 73 },
             { "startOffset": 312, "endOffset": 341, "count": 0 }
           ],
           "isBlockCoverage": true
@@ -28492,7 +28491,7 @@
         },
         {
           "functionName": "isAppliedFilter",
-          "ranges": [{ "startOffset": 388, "endOffset": 476, "count": 84 }],
+          "ranges": [{ "startOffset": 388, "endOffset": 476, "count": 85 }],
           "isBlockCoverage": true
         },
         {
@@ -28503,11 +28502,11 @@
         {
           "functionName": "joinPathSegments",
           "ranges": [
-            { "startOffset": 701, "endOffset": 1006, "count": 72 },
+            { "startOffset": 701, "endOffset": 1006, "count": 73 },
             { "startOffset": 764, "endOffset": 789, "count": 34 },
-            { "startOffset": 789, "endOffset": 945, "count": 38 },
+            { "startOffset": 789, "endOffset": 945, "count": 39 },
             { "startOffset": 945, "endOffset": 974, "count": 0 },
-            { "startOffset": 974, "endOffset": 1005, "count": 38 }
+            { "startOffset": 974, "endOffset": 1005, "count": 39 }
           ],
           "isBlockCoverage": true
         }
@@ -28926,29 +28925,29 @@
         },
         {
           "functionName": "",
-          "ranges": [{ "startOffset": 606, "endOffset": 660, "count": 72 }],
+          "ranges": [{ "startOffset": 606, "endOffset": 660, "count": 73 }],
           "isBlockCoverage": true
         },
         {
           "functionName": "_filter",
           "ranges": [
-            { "startOffset": 672, "endOffset": 1468, "count": 72 },
+            { "startOffset": 672, "endOffset": 1468, "count": 73 },
             { "startOffset": 857, "endOffset": 894, "count": 0 },
-            { "startOffset": 935, "endOffset": 970, "count": 60 },
+            { "startOffset": 935, "endOffset": 970, "count": 61 },
             { "startOffset": 972, "endOffset": 1009, "count": 12 },
-            { "startOffset": 1009, "endOffset": 1087, "count": 60 },
+            { "startOffset": 1009, "endOffset": 1087, "count": 61 },
             { "startOffset": 1087, "endOffset": 1124, "count": 0 },
-            { "startOffset": 1124, "endOffset": 1266, "count": 60 },
+            { "startOffset": 1124, "endOffset": 1266, "count": 61 },
             { "startOffset": 1266, "endOffset": 1328, "count": 2 },
-            { "startOffset": 1364, "endOffset": 1376, "count": 60 },
+            { "startOffset": 1364, "endOffset": 1376, "count": 61 },
             { "startOffset": 1378, "endOffset": 1436, "count": 2 },
-            { "startOffset": 1436, "endOffset": 1467, "count": 60 }
+            { "startOffset": 1436, "endOffset": 1467, "count": 61 }
           ],
           "isBlockCoverage": true
         },
         {
           "functionName": "_isDuplicateEntry",
-          "ranges": [{ "startOffset": 1473, "endOffset": 1549, "count": 72 }],
+          "ranges": [{ "startOffset": 1473, "endOffset": 1549, "count": 73 }],
           "isBlockCoverage": true
         },
         {
@@ -28958,13 +28957,13 @@
         },
         {
           "functionName": "_onlyFileFilter",
-          "ranges": [{ "startOffset": 1640, "endOffset": 1737, "count": 72 }],
+          "ranges": [{ "startOffset": 1640, "endOffset": 1737, "count": 73 }],
           "isBlockCoverage": true
         },
         {
           "functionName": "_onlyDirectoryFilter",
           "ranges": [
-            { "startOffset": 1742, "endOffset": 1855, "count": 60 },
+            { "startOffset": 1742, "endOffset": 1855, "count": 61 },
             { "startOffset": 1818, "endOffset": 1848, "count": 0 }
           ],
           "isBlockCoverage": true
@@ -28972,7 +28971,7 @@
         {
           "functionName": "_isSkippedByAbsoluteNegativePatterns",
           "ranges": [
-            { "startOffset": 1860, "endOffset": 2145, "count": 60 },
+            { "startOffset": 1860, "endOffset": 2145, "count": 61 },
             { "startOffset": 1997, "endOffset": 2144, "count": 0 }
           ],
           "isBlockCoverage": true
@@ -28980,8 +28979,8 @@
         {
           "functionName": "_isMatchToPatterns",
           "ranges": [
-            { "startOffset": 2150, "endOffset": 2652, "count": 62 },
-            { "startOffset": 2522, "endOffset": 2536, "count": 60 },
+            { "startOffset": 2150, "endOffset": 2652, "count": 63 },
+            { "startOffset": 2522, "endOffset": 2536, "count": 61 },
             { "startOffset": 2538, "endOffset": 2620, "count": 0 }
           ],
           "isBlockCoverage": true
@@ -34263,26 +34262,26 @@
     },
     {
       "scriptId": "1031",
-      "url": "file:///workspaces/github-api-get/node_modules/execa/lib/pipe.js",
+      "url": "file:///workspaces/github-api-get/node_modules/execa/lib/stdio.js",
       "functions": [
         {
           "functionName": "",
-          "ranges": [{ "startOffset": 0, "endOffset": 1194, "count": 1 }],
+          "ranges": [{ "startOffset": 0, "endOffset": 1157, "count": 1 }],
           "isBlockCoverage": true
         },
         {
-          "functionName": "isExecaChildProcess",
-          "ranges": [{ "startOffset": 165, "endOffset": 242, "count": 0 }],
+          "functionName": "hasAlias",
+          "ranges": [{ "startOffset": 65, "endOffset": 127, "count": 0 }],
           "isBlockCoverage": false
         },
         {
-          "functionName": "pipeToTarget",
-          "ranges": [{ "startOffset": 266, "endOffset": 826, "count": 0 }],
+          "functionName": "normalizeStdio",
+          "ranges": [{ "startOffset": 160, "endOffset": 794, "count": 0 }],
           "isBlockCoverage": false
         },
         {
-          "functionName": "addPipeMethods",
-          "ranges": [{ "startOffset": 859, "endOffset": 1192, "count": 0 }],
+          "functionName": "normalizeStdioNode",
+          "ranges": [{ "startOffset": 879, "endOffset": 1155, "count": 0 }],
           "isBlockCoverage": false
         }
       ]
@@ -34350,63 +34349,32 @@
     },
     {
       "scriptId": "1033",
-      "url": "file:///workspaces/github-api-get/node_modules/execa/lib/stdio.js",
+      "url": "file:///workspaces/github-api-get/node_modules/execa/lib/pipe.js",
       "functions": [
         {
           "functionName": "",
-          "ranges": [{ "startOffset": 0, "endOffset": 1157, "count": 1 }],
+          "ranges": [{ "startOffset": 0, "endOffset": 1194, "count": 1 }],
           "isBlockCoverage": true
         },
         {
-          "functionName": "hasAlias",
-          "ranges": [{ "startOffset": 65, "endOffset": 127, "count": 0 }],
+          "functionName": "isExecaChildProcess",
+          "ranges": [{ "startOffset": 165, "endOffset": 242, "count": 0 }],
           "isBlockCoverage": false
         },
         {
-          "functionName": "normalizeStdio",
-          "ranges": [{ "startOffset": 160, "endOffset": 794, "count": 0 }],
+          "functionName": "pipeToTarget",
+          "ranges": [{ "startOffset": 266, "endOffset": 826, "count": 0 }],
           "isBlockCoverage": false
         },
         {
-          "functionName": "normalizeStdioNode",
-          "ranges": [{ "startOffset": 879, "endOffset": 1155, "count": 0 }],
+          "functionName": "addPipeMethods",
+          "ranges": [{ "startOffset": 859, "endOffset": 1192, "count": 0 }],
           "isBlockCoverage": false
         }
       ]
     },
     {
       "scriptId": "1034",
-      "url": "file:///workspaces/github-api-get/node_modules/execa/lib/promise.js",
-      "functions": [
-        {
-          "functionName": "",
-          "ranges": [{ "startOffset": 0, "endOffset": 1109, "count": 1 }],
-          "isBlockCoverage": true
-        },
-        {
-          "functionName": "",
-          "ranges": [{ "startOffset": 91, "endOffset": 105, "count": 1 }],
-          "isBlockCoverage": true
-        },
-        {
-          "functionName": "",
-          "ranges": [{ "startOffset": 186, "endOffset": 281, "count": 3 }],
-          "isBlockCoverage": true
-        },
-        {
-          "functionName": "mergePromise",
-          "ranges": [{ "startOffset": 376, "endOffset": 749, "count": 0 }],
-          "isBlockCoverage": false
-        },
-        {
-          "functionName": "getSpawnedPromise",
-          "ranges": [{ "startOffset": 835, "endOffset": 1107, "count": 0 }],
-          "isBlockCoverage": false
-        }
-      ]
-    },
-    {
-      "scriptId": "1035",
       "url": "file:///workspaces/github-api-get/node_modules/execa/lib/stream.js",
       "functions": [
         {
@@ -34462,29 +34430,38 @@
       ]
     },
     {
-      "scriptId": "1036",
-      "url": "file:///workspaces/github-api-get/node_modules/execa/lib/verbose.js",
+      "scriptId": "1035",
+      "url": "file:///workspaces/github-api-get/node_modules/execa/lib/promise.js",
       "functions": [
-        { "functionName": "", "ranges": [{ "startOffset": 0, "endOffset": 575, "count": 1 }], "isBlockCoverage": true },
         {
-          "functionName": "padField",
-          "ranges": [{ "startOffset": 148, "endOffset": 204, "count": 0 }],
+          "functionName": "",
+          "ranges": [{ "startOffset": 0, "endOffset": 1109, "count": 1 }],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "",
+          "ranges": [{ "startOffset": 91, "endOffset": 105, "count": 1 }],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "",
+          "ranges": [{ "startOffset": 186, "endOffset": 281, "count": 3 }],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "mergePromise",
+          "ranges": [{ "startOffset": 376, "endOffset": 749, "count": 0 }],
           "isBlockCoverage": false
         },
         {
-          "functionName": "getTimestamp",
-          "ranges": [{ "startOffset": 228, "endOffset": 413, "count": 0 }],
-          "isBlockCoverage": false
-        },
-        {
-          "functionName": "logCommand",
-          "ranges": [{ "startOffset": 442, "endOffset": 573, "count": 0 }],
+          "functionName": "getSpawnedPromise",
+          "ranges": [{ "startOffset": 835, "endOffset": 1107, "count": 0 }],
           "isBlockCoverage": false
         }
       ]
     },
     {
-      "scriptId": "1037",
+      "scriptId": "1036",
       "url": "file:///workspaces/github-api-get/node_modules/execa/lib/command.js",
       "functions": [
         {
@@ -34535,6 +34512,28 @@
         {
           "functionName": "parseTemplates",
           "ranges": [{ "startOffset": 2865, "endOffset": 3068, "count": 0 }],
+          "isBlockCoverage": false
+        }
+      ]
+    },
+    {
+      "scriptId": "1037",
+      "url": "file:///workspaces/github-api-get/node_modules/execa/lib/verbose.js",
+      "functions": [
+        { "functionName": "", "ranges": [{ "startOffset": 0, "endOffset": 575, "count": 1 }], "isBlockCoverage": true },
+        {
+          "functionName": "padField",
+          "ranges": [{ "startOffset": 148, "endOffset": 204, "count": 0 }],
+          "isBlockCoverage": false
+        },
+        {
+          "functionName": "getTimestamp",
+          "ranges": [{ "startOffset": 228, "endOffset": 413, "count": 0 }],
+          "isBlockCoverage": false
+        },
+        {
+          "functionName": "logCommand",
+          "ranges": [{ "startOffset": 442, "endOffset": 573, "count": 0 }],
           "isBlockCoverage": false
         }
       ]
@@ -35069,7 +35068,7 @@
       ]
     }
   ],
-  "timestamp": 953.385254,
+  "timestamp": 1558.871162,
   "source-map-cache": {
     "file:///workspaces/github-api-get/node_modules/chunkd/dist/chunkd.js": {
       "lineLengths": [13, 62, 38, 30, 42, 35, 59, 51, 47, 1, 25, 24, 34],
