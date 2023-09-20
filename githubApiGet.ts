@@ -12,18 +12,18 @@ import { GITHUB_API_BASE_URL } from "./consts.js";
  * @remarks
  * This method is part of the {@link githubApi | github-api}.
  *
- * @param {String} loginName - The github login name
- * @param {String} projectName - The github project name
+ * @param {string} loginName - The github login name
+ * @param {string} projectName - The github project name
  * @param {boolean} infoLog - true Logs group and info into the console
  * @param {boolean} isProd - true Calls fetch to github api, false returns mock data with same structure
- * @returns {Promise<String[]>} The github topics of a project
+ * @returns {Promise<string[]>} The github topics of a project
  */
 export async function getGithubTopics(
-  loginName: String,
-  projectName: String,
+  loginName: string,
+  projectName: string,
   infoLog: boolean,
   isProd: boolean,
-): Promise<String[]> {
+): Promise<string[]> {
   if (infoLog) {
     console.group("getGithubTopics");
   }
@@ -37,13 +37,13 @@ export async function getGithubTopics(
     }
     // https://www.npmjs.com/package/jsonpath MIT License
     return Promise.resolve(
-      jp.query(await returnData(loginName, projectName, infoLog, isProd), "$.topics[*]") as Array<String>,
+      jp.query(await returnData(loginName, projectName, infoLog, isProd), "$.topics[*]") as Array<string>,
     );
   } else {
     if (infoLog) {
       console.groupEnd();
     }
-    return Promise.resolve([] as Array<String>);
+    return Promise.resolve([] as Array<string>);
   }
 }
 
@@ -53,13 +53,13 @@ export async function getGithubTopics(
  * @remarks
  * This method is part of the {@link githubApi | github-api}.
  *
- * @param {String} loginName - The github login name
- * @param {String} projectName - The github project name
+ * @param {string} loginName - The github login name
+ * @param {string} projectName - The github project name
  * @param {boolean} infoLog - true Logs group and info into the console
  * @param {boolean} isProd - true Calls fetch to github api, false returns mock data with same structure
  * @returns {Promise<any>} The github the project object / json of a project
  */
-async function returnData(loginName: String, projectName: String, infoLog: boolean, isProd: boolean) {
+async function returnData(loginName: string, projectName: string, infoLog: boolean, isProd: boolean) {
   if (isProd) {
     // get from github project api
     const GITHUB_API_PROJECT_URL = GITHUB_API_BASE_URL + "repos/" + loginName + "/";

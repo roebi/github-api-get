@@ -15,7 +15,7 @@ test("mockdataTopics", async (t) => {
   const projectName = "01-01-vanilla-HTML5-starter-page";
   const infoLog = true;
   const isProd = false;
-  const githubTopics = getGithubTopics(loginName, projectName, infoLog, isProd) as Promise<String[]>;
+  const githubTopics = getGithubTopics(loginName, projectName, infoLog, isProd) as Promise<string[]>;
   t.deepEqual(await githubTopics, [" mockdata!", "html5", "html5-template", "roebi", "starter"]);
 });
 
@@ -24,7 +24,7 @@ test("noTopics", async (t) => {
   const projectName = "";
   const infoLog = true;
   const isProd = false;
-  const githubTopics = getGithubTopics(loginName, projectName, infoLog, isProd) as Promise<String[]>;
+  const githubTopics = getGithubTopics(loginName, projectName, infoLog, isProd) as Promise<string[]>;
   t.deepEqual(await githubTopics, []);
 });
 
@@ -33,7 +33,7 @@ test("prodDataTopics", async (t) => {
   const projectName = "01-01-vanilla-HTML5-starter-page";
   const infoLog = true;
   const isProd = true;
-  const githubTopics = getGithubTopics(loginName, projectName, infoLog, isProd) as Promise<String[]>;
+  const githubTopics = getGithubTopics(loginName, projectName, infoLog, isProd) as Promise<string[]>;
   t.deepEqual(await githubTopics, ["css3", "html5", "html5-template", "roebi", "starter"]);
 });
 
@@ -42,6 +42,6 @@ test("prodDataNoTopicsInvalidProjectName", async (t) => {
   const projectName = "project-not-exist";
   const infoLog = true;
   const isProd = true;
-  const githubTopics = getGithubTopics(loginName, projectName, infoLog, isProd) as Promise<String[]>;
+  const githubTopics = getGithubTopics(loginName, projectName, infoLog, isProd) as Promise<string[]>;
   t.deepEqual(await githubTopics, []);
 });
