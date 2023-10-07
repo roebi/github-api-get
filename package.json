@@ -73,6 +73,7 @@
   },
   "homepage": "https://github.com/roebi/github-api-get#readme",
   "dependencies": {
+    "@types/jsonpath": "^0.2.1",
     "jsonpath": "^1.1.1",
     "node-fetch": "^3.3.2"
   }
