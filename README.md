@@ -1,10 +1,14 @@
 ## github-api-get
 
-- use github-api-get to get project info, i.e. its topics or user info
+- use githubApiGetProject to get the github project info - reduce with pathExpression constants - only root GET request
 
-- github-api-get for a project - only root GET request
+- i.e. its project topics
 
-- github-api-get for a user - only root GET request
+- use githubApiGetLogin to get the github login info - reduce with pathExpression constants - only root GET request
+
+- i.e. its user avatar
+
+- use getGithubTopics to get the github project topics - deprecated - use githubApiGetProject with GITHUB_PROJECT_TOPICS 
 
 ## Install
 
