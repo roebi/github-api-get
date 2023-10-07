@@ -41,15 +41,12 @@ export async function getGithubTopicsFromGithub() {
 // run the example
 await getGithubTopicsFromGithub();
 
-// TODO ...
-// if you need a part of the project information
-// github-api.project.topics
-
-// if you need a part of the user information
-// github-api.user.avatar_url
-
 ---
 ```
+
+## Usage of other APIs
+
+look in the tests: test.ts
 
 ## github API has a hourly based rate limit
 
@@ -72,7 +69,9 @@ see [github - rest - resources-in-the-rest-api - rate-limiting](https://docs.git
 
 ### getGithubTopics(loginName, projectName, infoLog, isProd)
 
-get project topics as a Array
+get github project topics as a Array
+
+deprecated: use githubApiGetProject() with pathExpression constant GITHUB_PROJECT_TOPICS
 
 #### loginName
 
@@ -117,13 +116,13 @@ i.e.
 
 look in the tests: test.ts
 
-## API - not yet implemented
+## API - new implemented
 
-### github-api(loginName, projectName?, infoLog, isProd)
+### githubApiGetProject(loginName, projectName, pathExpression, infoLog, isProd)
 
-get project info or user info
+get github project info - reduce with pathExpression constants
 
-Returns a `Promise<any>` with the project info or user info
+Returns a `Promise<any>` with the project info
 
 #### loginName
 
@@ -131,11 +130,17 @@ Type: `String`
 
 The github login name
 
-#### projectName (optional)
+#### projectName
 
 Type: `String`
 
-The github project namen of the project of a user login
+The github project name of the project of a user login
+
+#### pathExpression
+
+Type: `String`
+
+filter the project name of the project of a user login
 
 #### infoLog
 
@@ -153,13 +158,47 @@ true Calls fetch to github api, false returns mock data with same structure
 
 Returns a `Promise<any>`
 
-with a Json / Object of a project
-
-or
-
-with a Json / Object of a user login if only loginName is set
+with a Json / Object of a project reduced with pathExpression
 
 see Example answer Json / Object of a project
+
+### githubApiGetLogin(loginName, pathExpression, infoLog, isProd)
+
+get github user info - reduce with pathExpression constants
+
+Returns a `Promise<any>` with the project info or user info
+
+#### loginName
+
+Type: `String`
+
+The github login name
+
+#### pathExpression
+
+Type: `String`
+
+filter the project namen of the project of a user login
+
+#### infoLog
+
+Type: `boolean`
+
+true Logs group and info into the console
+
+#### isProd
+
+Type: `boolean`
+
+true Calls fetch to github api, false returns mock data with same structure
+
+#### return
+
+Returns a `Promise<any>`
+
+with a Json / Object of a user login reduced with pathExpression
+
+see Example answer Json / Object of a login of a user
 
 ## Example answer Json / Object of a project
 
@@ -173,7 +212,16 @@ Github Meta Data of project 'roebi/01-01-vanilla-HTML5-starter-page'
      "login": "roebi",
      ...
   },
+  "html_url": "https://github.com/roebi/01-01-vanilla-HTML5-starter-page",
   "description": "vanilla HTML 5 starter page - Have you ever heard of this HTML 5 tags ?",
+  ...
+  "url": "https://api.github.com/repos/roebi/01-01-vanilla-HTML5-starter-page",
+  ...
+  "homepage": "https://roebi.github.io/01-01-vanilla-HTML5-starter-page/",
+  ...
+  "license": {
+    "key": "unlicense",
+  },
   ...
   "topics": [
     "html5",
@@ -194,6 +242,9 @@ Github Meta Data of user login 'roebi'
   "login": "roebi",
   ...
   "avatar_url": "...",
+  ...
+  "url": "https://api.github.com/users/roebi",
+  "html_url": "https://github.com/roebi",
   ...
   "location": "Switzerland",
   ...

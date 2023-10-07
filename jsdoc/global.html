@@ -98,11 +98,18 @@
           </table>
 
           <dl class="details">
+            <dt class="important tag-deprecated">Deprecated:</dt>
+            <dd>
+              <ul class="dummy">
+                <li>use githubApiGetProject() with pathExpression constant GITHUB_PROJECT_TOPICS</li>
+              </ul>
+            </dd>
+
             <dt class="tag-source">Source:</dt>
             <dd class="tag-source">
               <ul class="dummy">
                 <li>
-                  <a href="githubApiGet.js.html">githubApiGet.js</a>, <a href="githubApiGet.js.html#line18">line 18</a>
+                  <a href="githubApiGet.js.html">githubApiGet.js</a>, <a href="githubApiGet.js.html#line89">line 89</a>
                 </li>
               </ul>
             </dd>
@@ -121,14 +128,106 @@
             </dd>
           </dl>
 
-          <h4 class="name" id="returnData">
-            <span class="type-signature">(async) </span>returnData<span class="signature"
-              >(loginName, projectName, infoLog, isProd)</span
-            ><span class="type-signature"> &rarr; {Promise.&lt;any>}</span>
+          <h4 class="name" id="githubApiGetLogin">
+            <span class="type-signature"></span>githubApiGetLogin<span class="signature"
+              >(loginName, pathExpression, infoLog, isProd)</span
+            ><span class="type-signature"> &rarr; {Promise.&lt;unknown>}</span>
           </h4>
 
           <div class="description">
-            <p>Returns the github the project object / json of a project.</p>
+            <p>Returns the github login info - reduce with pathExpression constants.</p>
+          </div>
+
+          <h5>Parameters:</h5>
+
+          <table class="params">
+            <thead>
+              <tr>
+                <th>Name</th>
+
+                <th>Type</th>
+
+                <th class="last">Description</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="name"><code>loginName</code></td>
+
+                <td class="type">
+                  <span class="param-type">string</span>
+                </td>
+
+                <td class="description last"><p>The github login name</p></td>
+              </tr>
+
+              <tr>
+                <td class="name"><code>pathExpression</code></td>
+
+                <td class="type">
+                  <span class="param-type">string</span>
+                </td>
+
+                <td class="description last"><p>The path expression to reduce the login info</p></td>
+              </tr>
+
+              <tr>
+                <td class="name"><code>infoLog</code></td>
+
+                <td class="type">
+                  <span class="param-type">boolean</span>
+                </td>
+
+                <td class="description last"><p>true Logs group and info into the console</p></td>
+              </tr>
+
+              <tr>
+                <td class="name"><code>isProd</code></td>
+
+                <td class="type">
+                  <span class="param-type">boolean</span>
+                </td>
+
+                <td class="description last">
+                  <p>true Calls fetch to github api, false returns mock data with same structure</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <dl class="details">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source">
+              <ul class="dummy">
+                <li>
+                  <a href="githubApiGet.js.html">githubApiGet.js</a>, <a href="githubApiGet.js.html#line53">line 53</a>
+                </li>
+              </ul>
+            </dd>
+          </dl>
+
+          <h5>Returns:</h5>
+
+          <div class="param-desc">
+            <p>The github login info</p>
+          </div>
+
+          <dl>
+            <dt>Type</dt>
+            <dd>
+              <span class="param-type">Promise.&lt;unknown></span>
+            </dd>
+          </dl>
+
+          <h4 class="name" id="githubApiGetProject">
+            <span class="type-signature"></span>githubApiGetProject<span class="signature"
+              >(loginName, projectName, pathExpression, infoLog, isProd)</span
+            ><span class="type-signature"> &rarr; {Promise.&lt;unknown>}</span>
+          </h4>
+
+          <div class="description">
+            <p>Returns the github project info - reduce with pathExpression constants.</p>
           </div>
 
           <h5>Parameters:</h5>
@@ -166,6 +265,16 @@
               </tr>
 
               <tr>
+                <td class="name"><code>pathExpression</code></td>
+
+                <td class="type">
+                  <span class="param-type">string</span>
+                </td>
+
+                <td class="description last"><p>The path expression to reduce the project info</p></td>
+              </tr>
+
+              <tr>
                 <td class="name"><code>infoLog</code></td>
 
                 <td class="type">
@@ -194,7 +303,165 @@
             <dd class="tag-source">
               <ul class="dummy">
                 <li>
-                  <a href="githubApiGet.js.html">githubApiGet.js</a>, <a href="githubApiGet.js.html#line52">line 52</a>
+                  <a href="githubApiGet.js.html">githubApiGet.js</a>, <a href="githubApiGet.js.html#line19">line 19</a>
+                </li>
+              </ul>
+            </dd>
+          </dl>
+
+          <h5>Returns:</h5>
+
+          <div class="param-desc">
+            <p>The github topics of a project</p>
+          </div>
+
+          <dl>
+            <dt>Type</dt>
+            <dd>
+              <span class="param-type">Promise.&lt;unknown></span>
+            </dd>
+          </dl>
+
+          <h4 class="name" id="isStringArray">
+            <span class="type-signature"></span>isStringArray<span class="signature">(value)</span
+            ><span class="type-signature"> &rarr; {boolean}</span>
+          </h4>
+
+          <div class="description">
+            <p>is String Array.</p>
+          </div>
+
+          <h5>Parameters:</h5>
+
+          <table class="params">
+            <thead>
+              <tr>
+                <th>Name</th>
+
+                <th>Type</th>
+
+                <th class="last">Description</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="name"><code>value</code></td>
+
+                <td class="type">
+                  <span class="param-type">string</span>
+                </td>
+
+                <td class="description last"><p>A value</p></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <dl class="details">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source">
+              <ul class="dummy">
+                <li>
+                  <a href="githubApiGet.js.html">githubApiGet.js</a>,
+                  <a href="githubApiGet.js.html#line124">line 124</a>
+                </li>
+              </ul>
+            </dd>
+          </dl>
+
+          <h5>Returns:</h5>
+
+          <div class="param-desc">
+            <p>true if the value is a String Array, else false</p>
+          </div>
+
+          <dl>
+            <dt>Type</dt>
+            <dd>
+              <span class="param-type">boolean</span>
+            </dd>
+          </dl>
+
+          <h4 class="name" id="returnData">
+            <span class="type-signature">(async) </span>returnData<span class="signature"
+              >(loginName, projectName, infoLog, isProd)</span
+            ><span class="type-signature"> &rarr; {Promise.&lt;any>}</span>
+          </h4>
+
+          <div class="description">
+            <p>
+              Returns the github project object / json of a project if with projectName, return the github login of a
+              user object / json of a login of a user.
+            </p>
+          </div>
+
+          <h5>Parameters:</h5>
+
+          <table class="params">
+            <thead>
+              <tr>
+                <th>Name</th>
+
+                <th>Type</th>
+
+                <th class="last">Description</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="name"><code>loginName</code></td>
+
+                <td class="type">
+                  <span class="param-type">string</span>
+                </td>
+
+                <td class="description last"><p>The github login name</p></td>
+              </tr>
+
+              <tr>
+                <td class="name"><code>projectName</code></td>
+
+                <td class="type">
+                  <span class="param-type">string</span>
+                </td>
+
+                <td class="description last">
+                  <p>The github project name - not empty for project info, empty for login of a user info</p>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="name"><code>infoLog</code></td>
+
+                <td class="type">
+                  <span class="param-type">boolean</span>
+                </td>
+
+                <td class="description last"><p>true Logs group and info into the console</p></td>
+              </tr>
+
+              <tr>
+                <td class="name"><code>isProd</code></td>
+
+                <td class="type">
+                  <span class="param-type">boolean</span>
+                </td>
+
+                <td class="description last">
+                  <p>true Calls fetch to github api, false returns mock data with same structure</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <dl class="details">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source">
+              <ul class="dummy">
+                <li>
+                  <a href="githubApiGet.js.html">githubApiGet.js</a>,
+                  <a href="githubApiGet.js.html#line136">line 136</a>
                 </li>
               </ul>
             </dd>
@@ -221,6 +488,9 @@
       <h3>Global</h3>
       <ul>
         <li><a href="global.html#getGithubTopics">getGithubTopics</a></li>
+        <li><a href="global.html#githubApiGetLogin">githubApiGetLogin</a></li>
+        <li><a href="global.html#githubApiGetProject">githubApiGetProject</a></li>
+        <li><a href="global.html#isStringArray">isStringArray</a></li>
         <li><a href="global.html#returnData">returnData</a></li>
       </ul>
     </nav>
@@ -228,8 +498,8 @@
     <br class="clear" />
 
     <footer>
-      Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.2</a> on Wed Sep 20 2023 10:19:10
-      GMT+0000 (Coordinated Universal Time)
+      Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.2</a> on Sat Oct 07 2023 21:42:09
+      GMT+0200 (Mitteleuropäische Sommerzeit)
     </footer>
 
     <script>
