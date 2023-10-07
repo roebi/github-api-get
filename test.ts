@@ -10,6 +10,15 @@ test("bar", async (t) => {
   t.is(await bar, "bar");
 });
 
+test("mockdataTopicsWithPathExpression", async (t) => {
+  const loginName = "roebi";
+  const projectName = "01-01-vanilla-HTML5-starter-page";
+  const infoLog = true;
+  const isProd = false;
+  const githubTopics = getGithubTopics(loginName, projectName, infoLog, isProd) as Promise<string[]>;
+  t.deepEqual(await githubTopics, [" mockdata!", "html5", "html5-template", "roebi", "starter"]);
+});
+
 test("mockdataTopics", async (t) => {
   const loginName = "roebi";
   const projectName = "01-01-vanilla-HTML5-starter-page";
