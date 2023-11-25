@@ -8,7 +8,7 @@
 
 - i.e. its user avatar
 
-- use getGithubTopics to get the github project topics - deprecated - use githubApiGetProject with GITHUB_PROJECT_TOPICS 
+- use getGithubTopics to get the github project topics - deprecated - use githubApiGetProject with GITHUB_PROJECT_TOPICS
 
 ## Install
 
