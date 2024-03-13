@@ -38,26 +38,25 @@ import { GITHUB_API_BASE_URL, GITHUB_PROJECT_TOPICS } from "./consts.js";
  * @returns {Promise&lt;unknown>} The github topics of a project
  */
 export async function githubApiGetProject(loginName, projectName, pathExpression, infoLog, isProd) {
+  if (infoLog) {
+    console.group("githubApiGetProject");
+  }
+  if (loginName &amp;&amp; projectName) {
     if (infoLog) {
-        console.group("githubApiGetProject");
+      console.info("githubApi.ts githubApiGetProject(): loginName: " + loginName);
+      console.info("githubApi.ts githubApiGetProject(): projectName: " + projectName);
     }
-    if (loginName &amp;&amp; projectName) {
-        if (infoLog) {
-            console.info("githubApi.ts githubApiGetProject(): loginName: " + loginName);
-            console.info("githubApi.ts githubApiGetProject(): projectName: " + projectName);
-        }
-        if (infoLog) {
-            console.groupEnd();
-        }
-        // https://www.npmjs.com/package/jsonpath MIT License
-        return Promise.resolve(jp.query(await returnData(loginName, projectName, infoLog, isProd), pathExpression));
+    if (infoLog) {
+      console.groupEnd();
     }
-    else {
-        if (infoLog) {
-            console.groupEnd();
-        }
-        return Promise.resolve({});
+    // https://www.npmjs.com/package/jsonpath MIT License
+    return Promise.resolve(jp.query(await returnData(loginName, projectName, infoLog, isProd), pathExpression));
+  } else {
+    if (infoLog) {
+      console.groupEnd();
     }
+    return Promise.resolve({});
+  }
 }
 /**
  * Returns the github login info - reduce with pathExpression constants.
@@ -72,25 +71,24 @@ export async function githubApiGetProject(loginName, projectName, pathExpression
  * @returns {Promise&lt;unknown>} The github login info
  */
 export async function githubApiGetLogin(loginName, pathExpression, infoLog, isProd) {
+  if (infoLog) {
+    console.group("githubApiGetLogin");
+  }
+  if (loginName) {
     if (infoLog) {
-        console.group("githubApiGetLogin");
+      console.info("githubApi.ts githubApiGetLogin(): loginName: " + loginName);
     }
-    if (loginName) {
-        if (infoLog) {
-            console.info("githubApi.ts githubApiGetLogin(): loginName: " + loginName);
-        }
-        if (infoLog) {
-            console.groupEnd();
-        }
-        // https://www.npmjs.com/package/jsonpath MIT License
-        return Promise.resolve(jp.query(await returnData(loginName, "", infoLog, isProd), pathExpression));
+    if (infoLog) {
+      console.groupEnd();
     }
-    else {
-        if (infoLog) {
-            console.groupEnd();
-        }
-        return Promise.resolve({});
+    // https://www.npmjs.com/package/jsonpath MIT License
+    return Promise.resolve(jp.query(await returnData(loginName, "", infoLog, isProd), pathExpression));
+  } else {
+    if (infoLog) {
+      console.groupEnd();
     }
+    return Promise.resolve({});
+  }
 }
 /**
  * Returns the github topics of a project.
@@ -108,31 +106,29 @@ export async function githubApiGetLogin(loginName, pathExpression, infoLog, isPr
  * @returns {Promise&lt;string[]>} The github topics of a project
  */
 export async function getGithubTopics(loginName, projectName, infoLog, isProd) {
+  if (infoLog) {
+    console.group("getGithubTopics");
+  }
+  if (loginName &amp;&amp; projectName) {
     if (infoLog) {
-        console.group("getGithubTopics");
+      console.info("githubApi.ts: loginName: " + loginName);
+      console.info("githubApi.ts: projectName: " + projectName);
     }
-    if (loginName &amp;&amp; projectName) {
-        if (infoLog) {
-            console.info("githubApi.ts: loginName: " + loginName);
-            console.info("githubApi.ts: projectName: " + projectName);
-        }
-        if (infoLog) {
-            console.groupEnd();
-        }
-        let githubProjectTopics = await githubApiGetProject(loginName, projectName, GITHUB_PROJECT_TOPICS, infoLog, isProd);
-        if (isStringArray(githubProjectTopics)) {
-            return Promise.resolve(githubProjectTopics);
-        }
-        else {
-            return Promise.resolve(["getGithubTopics_Error_in_Implementation_of_GithubApiGetProject"]);
-        }
+    if (infoLog) {
+      console.groupEnd();
     }
-    else {
-        if (infoLog) {
-            console.groupEnd();
-        }
-        return Promise.resolve([]);
+    let githubProjectTopics = await githubApiGetProject(loginName, projectName, GITHUB_PROJECT_TOPICS, infoLog, isProd);
+    if (isStringArray(githubProjectTopics)) {
+      return Promise.resolve(githubProjectTopics);
+    } else {
+      return Promise.resolve(["getGithubTopics_Error_in_Implementation_of_GithubApiGetProject"]);
     }
+  } else {
+    if (infoLog) {
+      console.groupEnd();
+    }
+    return Promise.resolve([]);
+  }
 }
 /**
  * is String Array.
@@ -142,7 +138,7 @@ export async function getGithubTopics(loginName, projectName, infoLog, isProd) {
  *
  */
 function isStringArray(value) {
-    return Array.isArray(value) &amp;&amp; value.every((element) => typeof element === "string");
+  return Array.isArray(value) &amp;&amp; value.every((element) => typeof element === "string");
 }
 /**
  * Returns the github project object / json of a project if with projectName, return the github login of a user object / json of a login of a user.
@@ -154,81 +150,82 @@ function isStringArray(value) {
  * @returns {Promise&lt;any>} The github the project object / json of a project
  */
 async function returnData(loginName, projectName, infoLog, isProd) {
-    if (isProd) {
-        if (projectName !== "") {
-            // get from github project api
-            const GITHUB_API_PROJECT_URL = GITHUB_API_BASE_URL + "repos/" + loginName + "/";
-            const response = await fetch(GITHUB_API_PROJECT_URL + projectName);
-            if (!response.ok) {
-                if (infoLog) {
-                    console.info("API rate limit exceeded for nnn.nnn.nnn.nnn. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)");
-                    console.info("https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting");
-                }
-                // Github has a Rate Limit
-                // in this case Status is 403 Forbidden
-                // and return this Message Object / Json:
-                // {
-                //   message: "API rate limit exceeded for nnn.nnn.nnn.nnn. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)",
-                //   documentation_url: 'https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting'
-                // }
-            }
-            return await response.json();
+  if (isProd) {
+    if (projectName !== "") {
+      // get from github project api
+      const GITHUB_API_PROJECT_URL = GITHUB_API_BASE_URL + "repos/" + loginName + "/";
+      const response = await fetch(GITHUB_API_PROJECT_URL + projectName);
+      if (!response.ok) {
+        if (infoLog) {
+          console.info(
+            "API rate limit exceeded for nnn.nnn.nnn.nnn. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)",
+          );
+          console.info("https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting");
         }
-        else {
-            // get from github login of a user api
-            const GITHUB_API_LOGIN_URL = GITHUB_API_BASE_URL + "users/" + loginName;
-            const response = await fetch(GITHUB_API_LOGIN_URL);
-            if (!response.ok) {
-                if (infoLog) {
-                    console.info("API rate limit exceeded for nnn.nnn.nnn.nnn. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)");
-                    console.info("https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting");
-                }
-                // Github has a Rate Limit
-                // in this case Status is 403 Forbidden
-                // and return this Message Object / Json:
-                // {
-                //   message: "API rate limit exceeded for nnn.nnn.nnn.nnn. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)",
-                //   documentation_url: 'https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting'
-                // }
-            }
-            return await response.json();
+        // Github has a Rate Limit
+        // in this case Status is 403 Forbidden
+        // and return this Message Object / Json:
+        // {
+        //   message: "API rate limit exceeded for nnn.nnn.nnn.nnn. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)",
+        //   documentation_url: 'https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting'
+        // }
+      }
+      return await response.json();
+    } else {
+      // get from github login of a user api
+      const GITHUB_API_LOGIN_URL = GITHUB_API_BASE_URL + "users/" + loginName;
+      const response = await fetch(GITHUB_API_LOGIN_URL);
+      if (!response.ok) {
+        if (infoLog) {
+          console.info(
+            "API rate limit exceeded for nnn.nnn.nnn.nnn. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)",
+          );
+          console.info("https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting");
         }
+        // Github has a Rate Limit
+        // in this case Status is 403 Forbidden
+        // and return this Message Object / Json:
+        // {
+        //   message: "API rate limit exceeded for nnn.nnn.nnn.nnn. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)",
+        //   documentation_url: 'https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting'
+        // }
+      }
+      return await response.json();
     }
-    else {
-        // return mock data
-        if (projectName !== "") {
-            // return mockdata of a project
-            // based on
-            // 01-01-vanilla-HTML5-starter-page.json
-            return Promise.resolve({
-                name: "01-01-vanilla-HTML5-starter-page",
-                owner: {
-                    login: "roebi",
-                },
-                html_url: "https://github.com/roebi/01-01-vanilla-HTML5-starter-page",
-                description: "vanilla HTML 5 starter page - Have you ever heard of this HTML 5 tags ?",
-                url: "https://api.github.com/repos/roebi/01-01-vanilla-HTML5-starter-page",
-                homepage: "https://roebi.github.io/01-01-vanilla-HTML5-starter-page/",
-                license: {
-                    key: "unlicense",
-                },
-                topics: [" mockdata!", "html5", "html5-template", "roebi", "starter"],
-            });
-        }
-        else {
-            // return mockdata of a login of a user
-            // based on
-            // roebi.json
-            return Promise.resolve({
-                login: "roebi",
-                avatar_url: "https://avatars.githubusercontent.com/u/3611826?v=4",
-                url: "https://api.github.com/users/roebi",
-                html_url: "https://github.com/roebi",
-                location: "Switzerland",
-                bio: "...",
-            });
-        }
+  } else {
+    // return mock data
+    if (projectName !== "") {
+      // return mockdata of a project
+      // based on
+      // 01-01-vanilla-HTML5-starter-page.json
+      return Promise.resolve({
+        name: "01-01-vanilla-HTML5-starter-page",
+        owner: {
+          login: "roebi",
+        },
+        html_url: "https://github.com/roebi/01-01-vanilla-HTML5-starter-page",
+        description: "vanilla HTML 5 starter page - Have you ever heard of this HTML 5 tags ?",
+        url: "https://api.github.com/repos/roebi/01-01-vanilla-HTML5-starter-page",
+        homepage: "https://roebi.github.io/01-01-vanilla-HTML5-starter-page/",
+        license: {
+          key: "unlicense",
+        },
+        topics: [" mockdata!", "html5", "html5-template", "roebi", "starter"],
+      });
+    } else {
+      // return mockdata of a login of a user
+      // based on
+      // roebi.json
+      return Promise.resolve({
+        login: "roebi",
+        avatar_url: "https://avatars.githubusercontent.com/u/3611826?v=4",
+        url: "https://api.github.com/users/roebi",
+        html_url: "https://github.com/roebi",
+        location: "Switzerland",
+        bio: "...",
+      });
     }
+  }
 }
 </code></pre>
         </article>
@@ -250,7 +247,7 @@ async function returnData(loginName, projectName, infoLog, isProd) {
     <br class="clear" />
 
     <footer>
-      Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.2</a> on Sat Nov 25 2023 14:44:49
+      Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.2</a> on Wed Mar 13 2024 20:11:41
       GMT+0100 (Mitteleuropäische Normalzeit)
     </footer>
 

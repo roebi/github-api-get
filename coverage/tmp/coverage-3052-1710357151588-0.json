@@ -1,0 +1,721 @@
+{
+  "result": [
+    {
+      "scriptId": "6",
+      "url": "node:internal/per_context/primordials",
+      "functions": [
+        {
+          "functionName": "SafeIterator",
+          "ranges": [{ "startOffset": 9830, "endOffset": 9903, "count": 2 }],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "next",
+          "ranges": [{ "startOffset": 9909, "endOffset": 9960, "count": 5 }],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "desc.value",
+          "ranges": [{ "startOffset": 11625, "endOffset": 11694, "count": 2 }],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "SafeWeakMap",
+          "ranges": [{ "startOffset": 12554, "endOffset": 12582, "count": 1 }],
+          "isBlockCoverage": false
+        },
+        {
+          "functionName": "SafeSet",
+          "ranges": [{ "startOffset": 12718, "endOffset": 12746, "count": 1 }],
+          "isBlockCoverage": false
+        },
+        {
+          "functionName": "SafeFinalizationRegistry",
+          "ranges": [{ "startOffset": 13184, "endOffset": 13240, "count": 1 }],
+          "isBlockCoverage": true
+        }
+      ]
+    },
+    {
+      "scriptId": "12",
+      "url": "node:internal/bootstrap/node",
+      "functions": [
+        {
+          "functionName": "set",
+          "ranges": [
+            { "startOffset": 4243, "endOffset": 4676, "count": 1 },
+            { "startOffset": 4370, "endOffset": 4384, "count": 0 },
+            { "startOffset": 4385, "endOffset": 4434, "count": 0 },
+            { "startOffset": 4436, "endOffset": 4473, "count": 0 },
+            { "startOffset": 4594, "endOffset": 4645, "count": 0 }
+          ],
+          "isBlockCoverage": true
+        }
+      ]
+    },
+    {
+      "scriptId": "15",
+      "url": "node:internal/validators",
+      "functions": [
+        {
+          "functionName": "",
+          "ranges": [
+            { "startOffset": 2278, "endOffset": 2666, "count": 1 },
+            { "startOffset": 2400, "endOffset": 2454, "count": 0 },
+            { "startOffset": 2496, "endOffset": 2550, "count": 0 },
+            { "startOffset": 2595, "endOffset": 2661, "count": 0 }
+          ],
+          "isBlockCoverage": true
+        }
+      ]
+    },
+    {
+      "scriptId": "16",
+      "url": "node:internal/util",
+      "functions": [
+        {
+          "functionName": "",
+          "ranges": [{ "startOffset": 22582, "endOffset": 22716, "count": 1 }],
+          "isBlockCoverage": true
+        }
+      ]
+    },
+    {
+      "scriptId": "23",
+      "url": "node:events",
+      "functions": [
+        {
+          "functionName": "emit",
+          "ranges": [{ "startOffset": 13716, "endOffset": 16098, "count": 2 }],
+          "isBlockCoverage": false
+        }
+      ]
+    },
+    {
+      "scriptId": "24",
+      "url": "node:buffer",
+      "functions": [
+        {
+          "functionName": "alignPool",
+          "ranges": [{ "startOffset": 4408, "endOffset": 4536, "count": 3 }],
+          "isBlockCoverage": false
+        },
+        {
+          "functionName": "from",
+          "ranges": [{ "startOffset": 8840, "endOffset": 9837, "count": 3 }],
+          "isBlockCoverage": false
+        },
+        {
+          "functionName": "fromStringFast",
+          "ranges": [{ "startOffset": 13534, "endOffset": 14097, "count": 3 }],
+          "isBlockCoverage": false
+        },
+        {
+          "functionName": "fromString",
+          "ranges": [{ "startOffset": 14101, "endOffset": 14542, "count": 3 }],
+          "isBlockCoverage": false
+        },
+        {
+          "functionName": "write",
+          "ranges": [{ "startOffset": 18322, "endOffset": 18386, "count": 3 }],
+          "isBlockCoverage": false
+        },
+        {
+          "functionName": "getEncodingOps",
+          "ranges": [
+            { "startOffset": 21800, "endOffset": 23672, "count": 3 },
+            { "startOffset": 21954, "endOffset": 22195, "count": 0 },
+            { "startOffset": 22201, "endOffset": 22628, "count": 0 },
+            { "startOffset": 22634, "endOffset": 22792, "count": 0 },
+            { "startOffset": 22798, "endOffset": 22958, "count": 0 },
+            { "startOffset": 22964, "endOffset": 23353, "count": 0 },
+            { "startOffset": 23359, "endOffset": 23494, "count": 0 },
+            { "startOffset": 23500, "endOffset": 23664, "count": 0 }
+          ],
+          "isBlockCoverage": true
+        }
+      ]
+    },
+    {
+      "scriptId": "25",
+      "url": "node:internal/buffer",
+      "functions": [
+        {
+          "functionName": "FastBuffer",
+          "ranges": [{ "startOffset": 27324, "endOffset": 27426, "count": 3 }],
+          "isBlockCoverage": false
+        }
+      ]
+    },
+    {
+      "scriptId": "28",
+      "url": "node:internal/process/task_queues",
+      "functions": [
+        {
+          "functionName": "setHasTickScheduled",
+          "ranges": [
+            { "startOffset": 1109, "endOffset": 1197, "count": 1 },
+            { "startOffset": 1186, "endOffset": 1189, "count": 0 }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "processTicksAndRejections",
+          "ranges": [
+            { "startOffset": 1511, "endOffset": 2522, "count": 0 },
+            { "startOffset": 2399, "endOffset": 2453, "count": 1 }
+          ],
+          "isBlockCoverage": true
+        }
+      ]
+    },
+    {
+      "scriptId": "29",
+      "url": "node:internal/process/promises",
+      "functions": [
+        {
+          "functionName": "setHasRejectionToWarn",
+          "ranges": [
+            { "startOffset": 2232, "endOffset": 2324, "count": 1 },
+            { "startOffset": 2313, "endOffset": 2316, "count": 0 }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "processPromiseRejections",
+          "ranges": [
+            { "startOffset": 6892, "endOffset": 10162, "count": 1 },
+            { "startOffset": 7053, "endOffset": 7237, "count": 0 },
+            { "startOffset": 7305, "endOffset": 10063, "count": 0 }
+          ],
+          "isBlockCoverage": true
+        }
+      ]
+    },
+    {
+      "scriptId": "30",
+      "url": "node:internal/fixed_queue",
+      "functions": [
+        {
+          "functionName": "isEmpty",
+          "ranges": [{ "startOffset": 3143, "endOffset": 3197, "count": 1 }],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "isEmpty",
+          "ranges": [{ "startOffset": 3724, "endOffset": 3773, "count": 1 }],
+          "isBlockCoverage": true
+        }
+      ]
+    },
+    {
+      "scriptId": "38",
+      "url": "node:internal/source_map/source_map_cache",
+      "functions": [
+        {
+          "functionName": "",
+          "ranges": [{ "startOffset": 852, "endOffset": 970, "count": 1 }],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "sourceMapCacheToObject",
+          "ranges": [
+            { "startOffset": 8878, "endOffset": 9139, "count": 1 },
+            { "startOffset": 9003, "endOffset": 9026, "count": 3 },
+            { "startOffset": 9092, "endOffset": 9121, "count": 0 }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "appendCJSCache",
+          "ranges": [
+            { "startOffset": 9143, "endOffset": 9378, "count": 1 },
+            { "startOffset": 9221, "endOffset": 9375, "count": 0 }
+          ],
+          "isBlockCoverage": true
+        }
+      ]
+    },
+    {
+      "scriptId": "72",
+      "url": "node:internal/net",
+      "functions": [
+        {
+          "functionName": "",
+          "ranges": [
+            { "startOffset": 1750, "endOffset": 2137, "count": 3 },
+            { "startOffset": 1811, "endOffset": 1843, "count": 0 },
+            { "startOffset": 2019, "endOffset": 2121, "count": 0 }
+          ],
+          "isBlockCoverage": true
+        }
+      ]
+    },
+    {
+      "scriptId": "106",
+      "url": "file:///C:/d/r/github-api-get/node_modules/ava/lib/cli.js",
+      "functions": [
+        {
+          "functionName": "loadCli",
+          "ranges": [
+            { "startOffset": 2552, "endOffset": 15167, "count": 0 },
+            { "startOffset": 14931, "endOffset": 14964, "count": 1 },
+            { "startOffset": 15062, "endOffset": 15165, "count": 1 }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "",
+          "ranges": [
+            { "startOffset": 13701, "endOffset": 14039, "count": 0 },
+            { "startOffset": 13903, "endOffset": 13938, "count": 1 }
+          ],
+          "isBlockCoverage": true
+        }
+      ]
+    },
+    {
+      "scriptId": "122",
+      "url": "node:internal/streams/writable",
+      "functions": [
+        {
+          "functionName": "resetBuffer",
+          "ranges": [{ "startOffset": 12280, "endOffset": 12449, "count": 1 }],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "_write",
+          "ranges": [
+            { "startOffset": 14966, "endOffset": 16535, "count": 6 },
+            { "startOffset": 15094, "endOffset": 15215, "count": 0 },
+            { "startOffset": 15315, "endOffset": 15338, "count": 0 },
+            { "startOffset": 15339, "endOffset": 15457, "count": 0 },
+            { "startOffset": 15540, "endOffset": 15587, "count": 0 },
+            { "startOffset": 15672, "endOffset": 16130, "count": 3 },
+            { "startOffset": 15890, "endOffset": 16130, "count": 0 },
+            { "startOffset": 16190, "endOffset": 16241, "count": 0 },
+            { "startOffset": 16287, "endOffset": 16339, "count": 0 },
+            { "startOffset": 16354, "endOffset": 16449, "count": 0 }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "Writable.write",
+          "ranges": [{ "startOffset": 16566, "endOffset": 16654, "count": 6 }],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "Writable.cork",
+          "ranges": [{ "startOffset": 16685, "endOffset": 16788, "count": 1 }],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "Writable.uncork",
+          "ranges": [{ "startOffset": 16821, "endOffset": 17072, "count": 1 }],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "writeOrBuffer",
+          "ranges": [
+            { "startOffset": 17645, "endOffset": 18864, "count": 6 },
+            { "startOffset": 17763, "endOffset": 17766, "count": 0 },
+            { "startOffset": 17901, "endOffset": 18321, "count": 3 },
+            { "startOffset": 17947, "endOffset": 18025, "count": 1 },
+            { "startOffset": 18163, "endOffset": 18209, "count": 0 },
+            { "startOffset": 18273, "endOffset": 18316, "count": 0 },
+            { "startOffset": 18321, "endOffset": 18568, "count": 3 },
+            { "startOffset": 18383, "endOffset": 18424, "count": 0 },
+            { "startOffset": 18637, "endOffset": 18677, "count": 0 }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "doWrite",
+          "ranges": [
+            { "startOffset": 18868, "endOffset": 19318, "count": 3 },
+            { "startOffset": 18980, "endOffset": 19011, "count": 0 },
+            { "startOffset": 19115, "endOffset": 19164, "count": 0 },
+            { "startOffset": 19190, "endOffset": 19227, "count": 0 }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "onwrite",
+          "ranges": [
+            { "startOffset": 19722, "endOffset": 22390, "count": 6 },
+            { "startOffset": 19842, "endOffset": 19919, "count": 0 },
+            { "startOffset": 20016, "endOffset": 20038, "count": 0 },
+            { "startOffset": 20180, "endOffset": 20814, "count": 0 },
+            { "startOffset": 20866, "endOffset": 20909, "count": 3 },
+            { "startOffset": 20989, "endOffset": 21010, "count": 0 },
+            { "startOffset": 21452, "endOffset": 21575, "count": 0 },
+            { "startOffset": 21661, "endOffset": 21722, "count": 0 },
+            { "startOffset": 21742, "endOffset": 22320, "count": 0 },
+            { "startOffset": 22327, "endOffset": 22382, "count": 0 }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "clearBuffer",
+          "ranges": [
+            { "startOffset": 23831, "endOffset": 25514, "count": 4 },
+            { "startOffset": 23964, "endOffset": 23983, "count": 3 },
+            { "startOffset": 23983, "endOffset": 24194, "count": 1 },
+            { "startOffset": 24194, "endOffset": 24213, "count": 0 },
+            { "startOffset": 24213, "endOffset": 24326, "count": 1 },
+            { "startOffset": 24328, "endOffset": 24965, "count": 0 },
+            { "startOffset": 24965, "endOffset": 25471, "count": 1 },
+            { "startOffset": 24981, "endOffset": 25196, "count": 3 },
+            { "startOffset": 25100, "endOffset": 25103, "count": 0 },
+            { "startOffset": 25224, "endOffset": 25259, "count": 2 },
+            { "startOffset": 25331, "endOffset": 25466, "count": 0 },
+            { "startOffset": 25471, "endOffset": 25513, "count": 1 }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "callback",
+          "ranges": [{ "startOffset": 24439, "endOffset": 24552, "count": 0 }],
+          "isBlockCoverage": false
+        }
+      ]
+    },
+    {
+      "scriptId": "127",
+      "url": "node:net",
+      "functions": [
+        {
+          "functionName": "get",
+          "ranges": [{ "startOffset": 65856, "endOffset": 65887, "count": 3 }],
+          "isBlockCoverage": true
+        }
+      ]
+    },
+    {
+      "scriptId": "138",
+      "url": "file:///C:/d/r/github-api-get/node_modules/ava/lib/api.js",
+      "functions": [
+        {
+          "functionName": "",
+          "ranges": [
+            { "startOffset": 6233, "endOffset": 6819, "count": 1 },
+            { "startOffset": 6269, "endOffset": 6313, "count": 0 },
+            { "startOffset": 6315, "endOffset": 6461, "count": 0 },
+            { "startOffset": 6480, "endOffset": 6582, "count": 0 },
+            { "startOffset": 6584, "endOffset": 6814, "count": 0 }
+          ],
+          "isBlockCoverage": true
+        }
+      ]
+    },
+    {
+      "scriptId": "166",
+      "url": "file:///C:/d/r/github-api-get/node_modules/chalk/source/index.js",
+      "functions": [
+        {
+          "functionName": "get",
+          "ranges": [{ "startOffset": 3245, "endOffset": 3289, "count": 2 }],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "builder",
+          "ranges": [
+            { "startOffset": 3848, "endOffset": 3959, "count": 2 },
+            { "startOffset": 3936, "endOffset": 3958, "count": 0 }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "applyStyle",
+          "ranges": [
+            { "startOffset": 4265, "endOffset": 5300, "count": 2 },
+            { "startOffset": 4306, "endOffset": 4316, "count": 0 },
+            { "startOffset": 4344, "endOffset": 4348, "count": 0 },
+            { "startOffset": 4361, "endOffset": 5299, "count": 0 }
+          ],
+          "isBlockCoverage": true
+        }
+      ]
+    },
+    {
+      "scriptId": "168",
+      "url": "file:///C:/d/r/github-api-get/node_modules/ava/lib/run-status.js",
+      "functions": [
+        {
+          "functionName": "suggestExitCode",
+          "ranges": [
+            { "startOffset": 4755, "endOffset": 5492, "count": 1 },
+            { "startOffset": 4817, "endOffset": 4835, "count": 0 },
+            { "startOffset": 4866, "endOffset": 4899, "count": 0 },
+            { "startOffset": 4901, "endOffset": 4919, "count": 0 },
+            { "startOffset": 5334, "endOffset": 5352, "count": 0 },
+            { "startOffset": 5458, "endOffset": 5476, "count": 0 }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "",
+          "ranges": [
+            { "startOffset": 5397, "endOffset": 5455, "count": 1 },
+            { "startOffset": 5427, "endOffset": 5455, "count": 0 }
+          ],
+          "isBlockCoverage": true
+        }
+      ]
+    },
+    {
+      "scriptId": "171",
+      "url": "file:///C:/d/r/github-api-get/node_modules/emittery/index.js",
+      "functions": [
+        {
+          "functionName": "emit",
+          "ranges": [
+            { "startOffset": 8504, "endOffset": 9384, "count": 0 },
+            { "startOffset": 9381, "endOffset": 9383, "count": 2 }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "",
+          "ranges": [{ "startOffset": 9131, "endOffset": 9229, "count": 1 }],
+          "isBlockCoverage": true
+        }
+      ]
+    },
+    {
+      "scriptId": "266",
+      "url": "file:///C:/d/r/github-api-get/node_modules/indent-string/index.js",
+      "functions": [
+        {
+          "functionName": "indentString",
+          "ranges": [
+            { "startOffset": 15, "endOffset": 819, "count": 2 },
+            { "startOffset": 173, "endOffset": 274, "count": 0 },
+            { "startOffset": 308, "endOffset": 408, "count": 0 },
+            { "startOffset": 426, "endOffset": 518, "count": 0 },
+            { "startOffset": 553, "endOffset": 663, "count": 0 },
+            { "startOffset": 683, "endOffset": 704, "count": 0 },
+            { "startOffset": 739, "endOffset": 746, "count": 0 }
+          ],
+          "isBlockCoverage": true
+        }
+      ]
+    },
+    {
+      "scriptId": "657",
+      "url": "file:///C:/d/r/github-api-get/node_modules/ava/lib/reporters/default.js",
+      "functions": [
+        {
+          "functionName": "_write",
+          "ranges": [{ "startOffset": 865, "endOffset": 936, "count": 3 }],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "writeLine",
+          "ranges": [
+            { "startOffset": 939, "endOffset": 1129, "count": 3 },
+            { "startOffset": 973, "endOffset": 1060, "count": 2 },
+            { "startOffset": 1060, "endOffset": 1126, "count": 1 }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "",
+          "ranges": [{ "startOffset": 1290, "endOffset": 1422, "count": 1 }],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "endRun",
+          "ranges": [
+            { "startOffset": 17266, "endOffset": 22925, "count": 1 },
+            { "startOffset": 17349, "endOffset": 17435, "count": 0 },
+            { "startOffset": 17472, "endOffset": 17590, "count": 0 },
+            { "startOffset": 17659, "endOffset": 18251, "count": 0 },
+            { "startOffset": 18304, "endOffset": 18972, "count": 0 },
+            { "startOffset": 18994, "endOffset": 19027, "count": 0 },
+            { "startOffset": 19029, "endOffset": 19193, "count": 0 },
+            { "startOffset": 19314, "endOffset": 19635, "count": 0 },
+            { "startOffset": 19664, "endOffset": 19747, "count": 0 },
+            { "startOffset": 19749, "endOffset": 20521, "count": 0 },
+            { "startOffset": 20554, "endOffset": 20876, "count": 0 },
+            { "startOffset": 20912, "endOffset": 21082, "count": 0 },
+            { "startOffset": 21118, "endOffset": 21288, "count": 0 },
+            { "startOffset": 21623, "endOffset": 21774, "count": 0 },
+            { "startOffset": 21811, "endOffset": 21938, "count": 0 },
+            { "startOffset": 21972, "endOffset": 22090, "count": 0 },
+            { "startOffset": 22134, "endOffset": 22283, "count": 0 },
+            { "startOffset": 22326, "endOffset": 22472, "count": 0 },
+            { "startOffset": 22510, "endOffset": 22665, "count": 0 },
+            { "startOffset": 22700, "endOffset": 22862, "count": 0 },
+            { "startOffset": 22885, "endOffset": 22922, "count": 0 }
+          ],
+          "isBlockCoverage": true
+        }
+      ]
+    },
+    {
+      "scriptId": "661",
+      "url": "file:///C:/d/r/github-api-get/node_modules/ava/lib/reporters/colors.js",
+      "functions": [
+        {
+          "functionName": "get log",
+          "ranges": [{ "startOffset": 54, "endOffset": 89, "count": 1 }],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "get pass",
+          "ranges": [{ "startOffset": 251, "endOffset": 288, "count": 1 }],
+          "isBlockCoverage": true
+        }
+      ]
+    },
+    {
+      "scriptId": "665",
+      "url": "file:///C:/d/r/github-api-get/node_modules/plur/index.js",
+      "functions": [
+        {
+          "functionName": "plur",
+          "ranges": [
+            { "startOffset": 66, "endOffset": 962, "count": 1 },
+            { "startOffset": 207, "endOffset": 587, "count": 0 },
+            { "startOffset": 944, "endOffset": 950, "count": 0 }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "",
+          "ranges": [
+            { "startOffset": 743, "endOffset": 907, "count": 1 },
+            { "startOffset": 880, "endOffset": 901, "count": 0 }
+          ],
+          "isBlockCoverage": true
+        }
+      ]
+    },
+    {
+      "scriptId": "677",
+      "url": "node:internal/util/iterable_weak_map",
+      "functions": [
+        {
+          "functionName": "",
+          "ranges": [{ "startOffset": 0, "endOffset": 2043, "count": 1 }],
+          "isBlockCoverage": false
+        },
+        {
+          "functionName": "<instance_members_initializer>",
+          "ranges": [{ "startOffset": 388, "endOffset": 1892, "count": 1 }],
+          "isBlockCoverage": false
+        },
+        {
+          "functionName": "set",
+          "ranges": [{ "startOffset": 541, "endOffset": 1068, "count": 0 }],
+          "isBlockCoverage": false
+        },
+        {
+          "functionName": "get",
+          "ranges": [{ "startOffset": 1074, "endOffset": 1132, "count": 0 }],
+          "isBlockCoverage": false
+        },
+        {
+          "functionName": "has",
+          "ranges": [{ "startOffset": 1138, "endOffset": 1189, "count": 0 }],
+          "isBlockCoverage": false
+        },
+        {
+          "functionName": "delete",
+          "ranges": [{ "startOffset": 1195, "endOffset": 1442, "count": 0 }],
+          "isBlockCoverage": false
+        },
+        {
+          "functionName": "",
+          "ranges": [{ "startOffset": 1448, "endOffset": 1889, "count": 1 }],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "next",
+          "ranges": [
+            { "startOffset": 1543, "endOffset": 1802, "count": 1 },
+            { "startOffset": 1628, "endOffset": 1801, "count": 0 }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "",
+          "ranges": [{ "startOffset": 1827, "endOffset": 1862, "count": 0 }],
+          "isBlockCoverage": false
+        },
+        {
+          "functionName": "cleanup",
+          "ranges": [{ "startOffset": 1896, "endOffset": 1951, "count": 0 }],
+          "isBlockCoverage": false
+        }
+      ]
+    }
+  ],
+  "timestamp": 945616.974961,
+  "source-map-cache": {
+    "file:///C:/d/r/github-api-get/node_modules/chunkd/dist/chunkd.js": {
+      "lineLengths": [13, 62, 38, 30, 42, 35, 59, 51, 47, 1, 25, 24, 34],
+      "data": {
+        "version": 3,
+        "file": "chunkd.js",
+        "sourceRoot": "",
+        "sources": ["file:///C:/d/r/github-api-get/node_modules/chunkd/src/chunkd.ts"],
+        "names": [],
+        "mappings": ";;AAAA,SAAwB,MAAM,CAC7B,KAAU,EACV,KAAa,EACb,KAAa;IAEb,IAAI,MAAM,GAAG,KAAK,CAAC,MAAM,CAAA;IACzB,IAAI,IAAI,GAAG,IAAI,CAAC,KAAK,CAAC,MAAM,GAAG,KAAK,CAAC,CAAA;IACrC,IAAI,SAAS,GAAG,MAAM,GAAG,KAAK,CAAA;IAC9B,IAAI,MAAM,GAAG,IAAI,CAAC,GAAG,CAAC,KAAK,EAAE,SAAS,CAAC,GAAG,KAAK,GAAG,IAAI,CAAA;IACtD,IAAI,KAAK,GAAG,IAAI,GAAG,CAAC,KAAK,GAAG,SAAS,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAA;IAE9C,OAAO,KAAK,CAAC,KAAK,CAAC,MAAM,EAAE,MAAM,GAAG,KAAK,CAAC,CAAA;AAC3C,CAAC;AAZD,yBAYC;AAED,MAAM,CAAC,OAAO,GAAG,MAAM,CAAA"
+      },
+      "url": null,
+      "sourceURL": null
+    },
+    "file:///C:/d/r/github-api-get/node_modules/write-file-atomic/node_modules/signal-exit/dist/cjs/index.js": {
+      "lineLengths": [
+        13, 7, 62, 74, 65, 63, 53, 60, 45, 115, 43, 34, 51, 41, 47, 46, 41, 38, 37, 55, 26, 64, 27, 15, 15, 25, 20, 6,
+        17, 22, 17, 6, 14, 23, 19, 35, 40, 9, 52, 24, 28, 30, 32, 11, 5, 16, 36, 5, 28, 40, 35, 29, 23, 19, 9, 28, 43,
+        28, 9, 14, 30, 9, 5, 28, 31, 25, 9, 32, 24, 46, 51, 9, 28, 62, 9, 19, 5, 1, 22, 1, 37, 12, 26, 44, 10, 16, 34,
+        10, 18, 36, 10, 6, 2, 49, 14, 25, 5, 14, 16, 1, 41, 52, 40, 25, 65, 24, 29, 13, 25, 31, 23, 20, 26, 16, 32, 43,
+        32, 49, 45, 70, 71, 69, 35, 63, 46, 83, 84, 82, 82, 81, 27, 37, 34, 68, 74, 61, 17, 36, 49, 34, 70, 41, 68, 29,
+        53, 40, 17, 14, 9, 61, 49, 5, 22, 29, 40, 29, 9, 28, 37, 24, 9, 59, 33, 22, 49, 63, 68, 30, 13, 10, 5, 12, 27,
+        19, 9, 28, 65, 68, 68, 35, 33, 49, 17, 51, 23, 46, 13, 25, 9, 44, 47, 10, 46, 49, 10, 5, 14, 28, 19, 9, 29, 45,
+        53, 33, 28, 75, 13, 32, 17, 60, 37, 13, 25, 32, 11, 55, 67, 33, 5, 30, 29, 40, 21, 9, 43, 28, 65, 91, 5, 31, 45,
+        56, 46, 49, 37, 13, 33, 60, 33, 69, 32, 23, 9, 14, 55, 9, 5, 1, 35, 65, 25, 94, 3, 67, 39, 2, 68, 29, 2, 61, 3,
+        28, 3, 66, 66, 45, 2, 12, 3, 24, 3, 68, 66, 45, 2, 12, 3, 27, 33
+      ],
+      "data": {
+        "version": 3,
+        "file": "index.js",
+        "sourceRoot": "",
+        "sources": [
+          "file:///C:/d/r/github-api-get/node_modules/write-file-atomic/node_modules/signal-exit/src/index.ts"
+        ],
+        "names": [],
+        "mappings": "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",
+        "sourcesContent": [
+          "// Note: since nyc uses this module to output coverage, any lines\n// that are in the direct sync flow of nyc's outputCoverage are\n// ignored, since we can never get coverage for them.\n// grab a reference to node's real process object right away\nimport { signals } from './signals.js'\nexport { signals }\n\n// just a loosened process type so we can do some evil things\ntype ProcessRE = NodeJS.Process & {\n  reallyExit: (code?: number | undefined | null) => any\n  emit: (ev: string, ...a: any[]) => any\n}\n\nconst processOk = (process: any): process is ProcessRE =>\n  !!process &&\n  typeof process === 'object' &&\n  typeof process.removeListener === 'function' &&\n  typeof process.emit === 'function' &&\n  typeof process.reallyExit === 'function' &&\n  typeof process.listeners === 'function' &&\n  typeof process.kill === 'function' &&\n  typeof process.pid === 'number' &&\n  typeof process.on === 'function'\n\nconst kExitEmitter = Symbol.for('signal-exit emitter')\nconst global: typeof globalThis & { [kExitEmitter]?: Emitter } = globalThis\nconst ObjectDefineProperty = Object.defineProperty.bind(Object)\n\n/**\n * A function that takes an exit code and signal as arguments\n *\n * In the case of signal exits *only*, a return value of true\n * will indicate that the signal is being handled, and we should\n * not synthetically exit with the signal we received. Regardless\n * of the handler return value, the handler is unloaded when an\n * otherwise fatal signal is received, so you get exactly 1 shot\n * at it, unless you add another onExit handler at that point.\n *\n * In the case of numeric code exits, we may already have committed\n * to exiting the process, for example via a fatal exception or\n * unhandled promise rejection, so it is impossible to stop safely.\n */\nexport type Handler = (\n  code: number | null | undefined,\n  signal: NodeJS.Signals | null\n) => true | void\ntype ExitEvent = 'afterExit' | 'exit'\ntype Emitted = { [k in ExitEvent]: boolean }\ntype Listeners = { [k in ExitEvent]: Handler[] }\n\n// teeny special purpose ee\nclass Emitter {\n  emitted: Emitted = {\n    afterExit: false,\n    exit: false,\n  }\n\n  listeners: Listeners = {\n    afterExit: [],\n    exit: [],\n  }\n\n  count: number = 0\n  id: number = Math.random()\n\n  constructor() {\n    if (global[kExitEmitter]) {\n      return global[kExitEmitter]\n    }\n    ObjectDefineProperty(global, kExitEmitter, {\n      value: this,\n      writable: false,\n      enumerable: false,\n      configurable: false,\n    })\n  }\n\n  on(ev: ExitEvent, fn: Handler) {\n    this.listeners[ev].push(fn)\n  }\n\n  removeListener(ev: ExitEvent, fn: Handler) {\n    const list = this.listeners[ev]\n    const i = list.indexOf(fn)\n    /* c8 ignore start */\n    if (i === -1) {\n      return\n    }\n    /* c8 ignore stop */\n    if (i === 0 && list.length === 1) {\n      list.length = 0\n    } else {\n      list.splice(i, 1)\n    }\n  }\n\n  emit(\n    ev: ExitEvent,\n    code: number | null | undefined,\n    signal: NodeJS.Signals | null\n  ): boolean {\n    if (this.emitted[ev]) {\n      return false\n    }\n    this.emitted[ev] = true\n    let ret: boolean = false\n    for (const fn of this.listeners[ev]) {\n      ret = fn(code, signal) === true || ret\n    }\n    if (ev === 'exit') {\n      ret = this.emit('afterExit', code, signal) || ret\n    }\n    return ret\n  }\n}\n\nabstract class SignalExitBase {\n  abstract onExit(cb: Handler, opts?: { alwaysLast?: boolean }): () => void\n  abstract load(): void\n  abstract unload(): void\n}\n\nconst signalExitWrap = <T extends SignalExitBase>(handler: T) => {\n  return {\n    onExit(cb: Handler, opts?: { alwaysLast?: boolean }) {\n      return handler.onExit(cb, opts)\n    },\n    load() {\n      return handler.load()\n    },\n    unload() {\n      return handler.unload()\n    },\n  }\n}\n\nclass SignalExitFallback extends SignalExitBase {\n  onExit() {\n    return () => {}\n  }\n  load() {}\n  unload() {}\n}\n\nclass SignalExit extends SignalExitBase {\n  // \"SIGHUP\" throws an `ENOSYS` error on Windows,\n  // so use a supported signal instead\n  /* c8 ignore start */\n  #hupSig = process.platform === 'win32' ? 'SIGINT' : 'SIGHUP'\n  /* c8 ignore stop */\n  #emitter = new Emitter()\n  #process: ProcessRE\n  #originalProcessEmit: ProcessRE['emit']\n  #originalProcessReallyExit: ProcessRE['reallyExit']\n\n  #sigListeners: { [k in NodeJS.Signals]?: () => void } = {}\n  #loaded: boolean = false\n\n  constructor(process: ProcessRE) {\n    super()\n    this.#process = process\n    // { <signal>: <listener fn>, ... }\n    this.#sigListeners = {}\n    for (const sig of signals) {\n      this.#sigListeners[sig] = () => {\n        // If there are no other listeners, an exit is coming!\n        // Simplest way: remove us and then re-send the signal.\n        // We know that this will kill the process, so we can\n        // safely emit now.\n        const listeners = this.#process.listeners(sig)\n        let { count } = this.#emitter\n        // This is a workaround for the fact that signal-exit v3 and signal\n        // exit v4 are not aware of each other, and each will attempt to let\n        // the other handle it, so neither of them do. To correct this, we\n        // detect if we're the only handler *except* for previous versions\n        // of signal-exit, and increment by the count of listeners it has\n        // created.\n        /* c8 ignore start */\n        const p = process as unknown as {\n          __signal_exit_emitter__?: { count: number }\n        }\n        if (\n          typeof p.__signal_exit_emitter__ === 'object' &&\n          typeof p.__signal_exit_emitter__.count === 'number'\n        ) {\n          count += p.__signal_exit_emitter__.count\n        }\n        /* c8 ignore stop */\n        if (listeners.length === count) {\n          this.unload()\n          const ret = this.#emitter.emit('exit', null, sig)\n          /* c8 ignore start */\n          const s = sig === 'SIGHUP' ? this.#hupSig : sig\n          if (!ret) process.kill(process.pid, s)\n          /* c8 ignore stop */\n        }\n      }\n    }\n\n    this.#originalProcessReallyExit = process.reallyExit\n    this.#originalProcessEmit = process.emit\n  }\n\n  onExit(cb: Handler, opts?: { alwaysLast?: boolean }) {\n    /* c8 ignore start */\n    if (!processOk(this.#process)) {\n      return () => {}\n    }\n    /* c8 ignore stop */\n\n    if (this.#loaded === false) {\n      this.load()\n    }\n\n    const ev = opts?.alwaysLast ? 'afterExit' : 'exit'\n    this.#emitter.on(ev, cb)\n    return () => {\n      this.#emitter.removeListener(ev, cb)\n      if (\n        this.#emitter.listeners['exit'].length === 0 &&\n        this.#emitter.listeners['afterExit'].length === 0\n      ) {\n        this.unload()\n      }\n    }\n  }\n\n  load() {\n    if (this.#loaded) {\n      return\n    }\n    this.#loaded = true\n\n    // This is the number of onSignalExit's that are in play.\n    // It's important so that we can count the correct number of\n    // listeners on signals, and don't wait for the other one to\n    // handle it instead of us.\n    this.#emitter.count += 1\n\n    for (const sig of signals) {\n      try {\n        const fn = this.#sigListeners[sig]\n        if (fn) this.#process.on(sig, fn)\n      } catch (_) {}\n    }\n\n    this.#process.emit = (ev: string, ...a: any[]) => {\n      return this.#processEmit(ev, ...a)\n    }\n    this.#process.reallyExit = (code?: number | null | undefined) => {\n      return this.#processReallyExit(code)\n    }\n  }\n\n  unload() {\n    if (!this.#loaded) {\n      return\n    }\n    this.#loaded = false\n\n    signals.forEach(sig => {\n      const listener = this.#sigListeners[sig]\n      /* c8 ignore start */\n      if (!listener) {\n        throw new Error('Listener not defined for signal: ' + sig)\n      }\n      /* c8 ignore stop */\n      try {\n        this.#process.removeListener(sig, listener)\n        /* c8 ignore start */\n      } catch (_) {}\n      /* c8 ignore stop */\n    })\n    this.#process.emit = this.#originalProcessEmit\n    this.#process.reallyExit = this.#originalProcessReallyExit\n    this.#emitter.count -= 1\n  }\n\n  #processReallyExit(code?: number | null | undefined) {\n    /* c8 ignore start */\n    if (!processOk(this.#process)) {\n      return 0\n    }\n    this.#process.exitCode = code || 0\n    /* c8 ignore stop */\n\n    this.#emitter.emit('exit', this.#process.exitCode, null)\n    return this.#originalProcessReallyExit.call(\n      this.#process,\n      this.#process.exitCode\n    )\n  }\n\n  #processEmit(ev: string, ...args: any[]): any {\n    const og = this.#originalProcessEmit\n    if (ev === 'exit' && processOk(this.#process)) {\n      if (typeof args[0] === 'number') {\n        this.#process.exitCode = args[0]\n        /* c8 ignore start */\n      }\n      /* c8 ignore start */\n      const ret = og.call(this.#process, ev, ...args)\n      /* c8 ignore start */\n      this.#emitter.emit('exit', this.#process.exitCode, null)\n      /* c8 ignore stop */\n      return ret\n    } else {\n      return og.call(this.#process, ev, ...args)\n    }\n  }\n}\n\nconst process = globalThis.process\n// wrap so that we call the method on the actual handler, without\n// exporting it directly.\nexport const {\n  /**\n   * Called when the process is exiting, whether via signal, explicit\n   * exit, or running out of stuff to do.\n   *\n   * If the global process object is not suitable for instrumentation,\n   * then this will be a no-op.\n   *\n   * Returns a function that may be used to unload signal-exit.\n   */\n  onExit,\n\n  /**\n   * Load the listeners.  Likely you never need to call this, unless\n   * doing a rather deep integration with signal-exit functionality.\n   * Mostly exposed for the benefit of testing.\n   *\n   * @internal\n   */\n  load,\n\n  /**\n   * Unload the listeners.  Likely you never need to call this, unless\n   * doing a rather deep integration with signal-exit functionality.\n   * Mostly exposed for the benefit of testing.\n   *\n   * @internal\n   */\n  unload,\n} = signalExitWrap(\n  processOk(process) ? new SignalExit(process) : new SignalExitFallback()\n)\n"
+        ]
+      },
+      "url": null,
+      "sourceURL": null
+    },
+    "file:///C:/d/r/github-api-get/node_modules/write-file-atomic/node_modules/signal-exit/dist/cjs/signals.js": {
+      "lineLengths": [
+        13, 62, 25, 3, 47, 2, 54, 54, 53, 55, 28, 2, 55, 54, 52, 2, 54, 49, 2, 56, 52, 55, 36, 2, 54, 50, 54, 13, 3, 21,
+        52, 35, 133, 61, 14, 16, 6, 1, 35, 68, 1, 35
+      ],
+      "data": {
+        "version": 3,
+        "file": "signals.js",
+        "sourceRoot": "",
+        "sources": [
+          "file:///C:/d/r/github-api-get/node_modules/write-file-atomic/node_modules/signal-exit/src/signals.ts"
+        ],
+        "names": [],
+        "mappings": ";;;AAAA;;;;;;;;;;;;;;;;;;;;;;;;;GAyBG;AACU,QAAA,OAAO,GAAqB,EAAE,CAAA;AAC3C,eAAO,CAAC,IAAI,CAAC,QAAQ,EAAE,QAAQ,EAAE,SAAS,CAAC,CAAA;AAE3C,IAAI,OAAO,CAAC,QAAQ,KAAK,OAAO,EAAE;IAChC,eAAO,CAAC,IAAI,CACV,SAAS,EACT,SAAS,EACT,WAAW,EACX,SAAS,EACT,SAAS,EACT,SAAS,EACT,SAAS,EACT,QAAQ,EACR,SAAS,EACT,QAAQ;IACR,yDAAyD;IACzD,UAAU;IACV,YAAY;KACb,CAAA;CACF;AAED,IAAI,OAAO,CAAC,QAAQ,KAAK,OAAO,EAAE;IAChC,eAAO,CAAC,IAAI,CAAC,OAAO,EAAE,SAAS,EAAE,QAAQ,EAAE,WAAW,CAAC,CAAA;CACxD",
+        "sourcesContent": [
+          "/**\n * This is not the set of all possible signals.\n *\n * It IS, however, the set of all signals that trigger\n * an exit on either Linux or BSD systems.  Linux is a\n * superset of the signal names supported on BSD, and\n * the unknown signals just fail to register, so we can\n * catch that easily enough.\n *\n * Windows signals are a different set, since there are\n * signals that terminate Windows processes, but don't\n * terminate (or don't even exist) on Posix systems.\n *\n * Don't bother with SIGKILL.  It's uncatchable, which\n * means that we can't fire any callbacks anyway.\n *\n * If a user does happen to register a handler on a non-\n * fatal signal like SIGWINCH or something, and then\n * exit, it'll end up firing `process.emit('exit')`, so\n * the handler will be fired anyway.\n *\n * SIGBUS, SIGFPE, SIGSEGV and SIGILL, when not raised\n * artificially, inherently leave the process in a\n * state from which it is not safe to try and enter JS\n * listeners.\n */\nexport const signals: NodeJS.Signals[] = []\nsignals.push('SIGHUP', 'SIGINT', 'SIGTERM')\n\nif (process.platform !== 'win32') {\n  signals.push(\n    'SIGALRM',\n    'SIGABRT',\n    'SIGVTALRM',\n    'SIGXCPU',\n    'SIGXFSZ',\n    'SIGUSR2',\n    'SIGTRAP',\n    'SIGSYS',\n    'SIGQUIT',\n    'SIGIOT'\n    // should detect profiler and enable/disable accordingly.\n    // see #21\n    // 'SIGPROF'\n  )\n}\n\nif (process.platform === 'linux') {\n  signals.push('SIGIO', 'SIGPOLL', 'SIGPWR', 'SIGSTKFLT')\n}\n"
+        ]
+      },
+      "url": null,
+      "sourceURL": null
+    }
+  }
+}
