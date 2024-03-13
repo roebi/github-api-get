@@ -61,7 +61,10 @@
       "compile": false
     }
   },
-  "repository": "github:roebi/github-api-get.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roebi/github-api-get.git"
+  },
   "keywords": [
     "github-api",
     "github-meta",
