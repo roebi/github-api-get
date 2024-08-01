@@ -4,7 +4,7 @@ name: Release
   workflow_dispatch:
   push:
     branches:
-      - main
+      - master
       - next
       - beta
 jobs:
