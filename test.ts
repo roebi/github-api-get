@@ -43,7 +43,15 @@ test("realdataTopicsWithPathExpression", async (t) => {
   const githubTopics = githubApiGetProject(loginName, projectName, GITHUB_PROJECT_TOPICS, infoLog, isProd) as Promise<
     string[]
   >;
-  t.deepEqual(await githubTopics, ["css3", "html5", "html5-template", "roebi", "starter"]);
+  t.deepEqual(await githubTopics, [
+    "css3",
+    "html5",
+    "html5-template",
+    "roebi",
+    "starter",
+    "template",
+    "template-project",
+  ]);
 });
 
 // tests for new githubApiGetLogin
@@ -108,7 +116,15 @@ test("prodDataTopics", async (t) => {
   const infoLog = true;
   const isProd = true;
   const githubTopics = getGithubTopics(loginName, projectName, infoLog, isProd) as Promise<string[]>;
-  t.deepEqual(await githubTopics, ["css3", "html5", "html5-template", "roebi", "starter"]);
+  t.deepEqual(await githubTopics, [
+    "css3",
+    "html5",
+    "html5-template",
+    "roebi",
+    "starter",
+    "template",
+    "template-project",
+  ]);
 });
 
 test("prodDataNoTopicsInvalidProjectName", async (t) => {
