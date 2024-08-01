@@ -14,7 +14,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: "lts/*"
           cache: npm
@@ -24,6 +24,6 @@ jobs:
         run: npm audit signatures
       - name: Semantic Release
         env:
-          GITHUB_TOKEN: ${{ secrets.TOKEN_FOR_GITHUB_03 }}
-          NPM_TOKEN: ${{ secrets.TOKEN_FOR_NPM_02 }}
+          GITHUB_TOKEN: ${{ secrets.TOKEN_FOR_GITHUB_202408 }}
+          NPM_TOKEN: ${{ secrets.TOKEN_FOR_NPM_202408 }}
         run: npx semantic-release
