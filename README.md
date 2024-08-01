@@ -25,28 +25,37 @@ export {};
 
 // import the function from the library
 import { getGithubTopics } from "github-api-get";
+import { GITHUB_PROJECT_TOPICS } from './consts.js';
 
 // define a example usage function
-export async function getGithubTopicsFromGithub() {
+export async function realdataTopicsWithPathExpression() {
   const loginName = "roebi";
   const projectName = "01-01-vanilla-HTML5-starter-page";
   const infoLog = true;
   const isProd = true;
 
-  const githubTopics = getGithubTopics(loginName, projectName, infoLog, isProd) as Promise<string[]>;
+  const githubTopics = githubApiGetProject(loginName, projectName, GITHUB_PROJECT_TOPICS, infoLog, isProd); // as Promise<string[]>
 
   const realGithubTopics = await githubTopics;
-  console.group("realGithubTopics");
+  console.group("realGithubTopics, call of githubApiGetProject with constant GITHUB_PROJECT_TOPICS");
   console.info("realGithubTopics");
   console.info(realGithubTopics);
   console.groupEnd();
 }
 
 // run the example
-await getGithubTopicsFromGithub();
+await realdataTopicsWithPathExpression();
 
 ---
 ```
+
+real demo see
+
+https://github.com/roebi/github-api-get-nodejs-example
+
+or direct on
+
+https://stackblitz.com/edit/github-api-get-nodejs
 
 ## Usage of other APIs
 
@@ -68,57 +77,6 @@ and return this Message Object / Json:
 ```
 
 see [github - rest - resources-in-the-rest-api - rate-limiting](https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting)
-
-## API - implemented
-
-### getGithubTopics(loginName, projectName, infoLog, isProd)
-
-get github project topics as a Array
-
-deprecated: use githubApiGetProject() with pathExpression constant GITHUB_PROJECT_TOPICS
-
-#### loginName
-
-Type: `String`
-
-The github login name
-
-#### projectName
-
-Type: `String`
-
-The github project name of the project of a user login
-
-#### infoLog
-
-Type: `boolean`
-
-true Logs group and info into the console
-
-#### isProd
-
-Type: `boolean`
-
-true Calls fetch to github api, false returns mock data with same structure
-
-#### return
-
-Returns a `Promise<String[]>` with the list of the project topics
-
-i.e.
-
-```javascript
-"topics": [
-  "html5",
-  "html5-template",
-  "roebi",
-  "starter"
-]
-```
-
-## tip on the behavior of the function
-
-look in the tests: test.ts
 
 ## API - new implemented
 
@@ -254,6 +212,57 @@ Github Meta Data of user login 'roebi'
   ...
   "bio": "..."
 }
+```
+
+## tip on the behavior of the function
+
+look in the tests: test.ts
+
+## API - implemented - deprecated
+
+### getGithubTopics(loginName, projectName, infoLog, isProd)
+
+get github project topics as a Array
+
+deprecated: use githubApiGetProject() with pathExpression constant GITHUB_PROJECT_TOPICS
+
+#### loginName
+
+Type: `String`
+
+The github login name
+
+#### projectName
+
+Type: `String`
+
+The github project name of the project of a user login
+
+#### infoLog
+
+Type: `boolean`
+
+true Logs group and info into the console
+
+#### isProd
+
+Type: `boolean`
+
+true Calls fetch to github api, false returns mock data with same structure
+
+#### return
+
+Returns a `Promise<String[]>` with the list of the project topics
+
+i.e.
+
+```javascript
+"topics": [
+  "html5",
+  "html5-template",
+  "roebi",
+  "starter"
+]
 ```
 
 ## tip on the behavior of the function
