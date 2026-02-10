@@ -1,6 +1,6 @@
 {
   "name": "github-api-get",
-  "version": "0.4.4",
+  "version": "0.4.5",
   "description": "use github api",
   "type": "module",
   "exports": {
@@ -77,8 +77,10 @@
   },
   "homepage": "https://github.com/roebi/github-api-get#readme",
   "dependencies": {
+    "@actions/http-client": "^4.0.0",
     "@types/jsonpath": "^0.2.4",
     "jsonpath": "^1.2.0",
-    "node-fetch": "^3.3.2"
+    "node-fetch": "^3.3.2",
+    "undici": "^7.21.0"
   }
 }
