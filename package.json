@@ -81,6 +81,6 @@
     "@types/jsonpath": "^0.2.4",
     "jsonpath": "^1.2.0",
     "node-fetch": "^3.3.2",
-    "undici": "^7.21.0"
+    "undici": "^8.0.2"
   }
 }
