@@ -11,13 +11,7 @@
  * @param {boolean} isProd - true Calls fetch to github api, false returns mock data with same structure
  * @returns {Promise<unknown>} The github topics of a project
  */
-export declare function githubApiGetProject(
-  loginName: string,
-  projectName: string,
-  pathExpression: string,
-  infoLog: boolean,
-  isProd: boolean,
-): Promise<unknown>;
+export declare function githubApiGetProject(loginName: string, projectName: string, pathExpression: string, infoLog: boolean, isProd: boolean): Promise<unknown>;
 /**
  * Returns the github login info - reduce with pathExpression constants.
  *
@@ -30,12 +24,7 @@ export declare function githubApiGetProject(
  * @param {boolean} isProd - true Calls fetch to github api, false returns mock data with same structure
  * @returns {Promise<unknown>} The github login info
  */
-export declare function githubApiGetLogin(
-  loginName: string,
-  pathExpression: string,
-  infoLog: boolean,
-  isProd: boolean,
-): Promise<unknown>;
+export declare function githubApiGetLogin(loginName: string, pathExpression: string, infoLog: boolean, isProd: boolean): Promise<unknown>;
 /**
  * Returns the github topics of a project.
  *
@@ -51,9 +40,4 @@ export declare function githubApiGetLogin(
  * @param {boolean} isProd - true Calls fetch to github api, false returns mock data with same structure
  * @returns {Promise<string[]>} The github topics of a project
  */
-export declare function getGithubTopics(
-  loginName: string,
-  projectName: string,
-  infoLog: boolean,
-  isProd: boolean,
-): Promise<string[]>;
+export declare function getGithubTopics(loginName: string, projectName: string, infoLog: boolean, isProd: boolean): Promise<string[]>;
